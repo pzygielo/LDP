@@ -129,7 +129,7 @@
             <filename>*.mli</filename> interface sources. However, if
             package lacks any documentation (which is unfortunately often
             the case), you can include <filename>*.mli</filename>, but
-            it should be gziped and placed in package as 
+            it should be gzipped and placed in package as 
             <literal>%doc</literal>.
           </para>
         </listitem>

@@ -50,7 +50,7 @@ default requiring <em/root/ privileges. Still, if there is a
 possibility for user-level setup, I'll try to mention it.
 
 <bf/NOTE:/ The X Window System, TeX and other Linux components are complex
-systems with a sofisticated configuration. If you do something wrong,
+systems with a sophisticated configuration. If you do something wrong,
 you can not only fail with Russian setup, but to break the component
 as well, if not the entire system. This is not to scare you off, but
 merely to make you understand the seriousness of the process and be
@@ -249,7 +249,7 @@ The <em/Alt/ standard is still alive and extremely popular in MS-DOS.
 
 <em/Microsoft CP1251 codepage/ is just an attempt of Microsoft to come
 up with the new standard for Cyrillic codeset in Windows. As far as I
-know, it is not compatible with anything else (not very surprizing,
+know, it is not compatible with anything else (not very surprising,
 huh?)
 
 And finally there is <em/KOI8-R/. This one is also quite old, but it
@@ -282,7 +282,7 @@ The principal difference is that the Alt codeset is used by MS-DOS
 users only, whereas KOI8-R is used in Unix, as well as in MS-DOS
 (though in the latter KOI8-R is much less popular). Since we are doing
 the right thing (namely working in the Unix operating system), we
-shall focuse mostly on KOI8-R.
+shall focus mostly on KOI8-R.
 
 As for the ISO standard, it is more popular in Europe and the US as a
 standard for Cyrillic. The leader in Russia is definitely KOI8-R.
@@ -392,7 +392,7 @@ in 1994, when it was like the only national language oriented
 HOWTO. <em/If you have any idea about this magic sequence, please tell
 me/.
 
-Finally, for those purists, who don't wont to give the <em/Alt/
+Finally, for those purists, who don't want to give the <em/Alt/
 codeset a chance, I'm attaching yet another version of the script
 above, using native <em/KOI8-R/ fonts.
 
@@ -689,7 +689,7 @@ In the previous versions of this document I used to describe the
 useless. The <tt/Xmodmap/-based input translation method is well known
 as being it is non-portable, inflexible, and incomplete.  Your
 configuration may work with one XFree version and fail with a
-different one. Even worse, sometimes things differ accross different
+different one. Even worse, sometimes things differ across different
 servers in the same distribution.
 
 I strongly suggest you not to play with this <tt/xmodmap/, at least
@@ -958,7 +958,7 @@ Internet electronic mail software generally consists of two parts:
 <bf/MUA/ (Mail User Agent) and <bf/MTA/ (Mail Transfer Agent). MUA is
 the program you use to read, compose, and send mail. However, MUA
 doesn't transfer mail messages by itself. Instead, it calls the MTA,
-which is reponsible to send message using an appropriate protocol to
+which is responsible to send message using an appropriate protocol to
 the appropriate direction. For example, your MUA may be <bf/Pine/ and
 MTA - <bf/qmail/.
 
@@ -976,7 +976,7 @@ backward compatibility with other Cyrillic encodings (section <ref
 id="mime">).
 
 Meanwhile, we start MUA setup, because it is usually up to an
-end-user. Then, we will describe the basic priciples of the MTA
+end-user. Then, we will describe the basic principles of the MTA
 configuration for Cyrillic.
 
 
@@ -1215,7 +1215,7 @@ There is some new <htmlurl
 url="ftp://xray.sai.msu.su/pub/outgoing/teTeX-rus/" name="teTeX-rus
 package">. It is reported to support KOI-8 character set and have all
 basic stuff required for TeX and LaTeX. I personally haven't tried it
-yes, although I heard about it's successfull usage.
+yes, although I heard about it's successful usage.
 
 <bf/NOTE:/ This package requires you to reconfigure and rebuild some
 parts of your <bf/teTeX/ package (for example the precompiled LaTeX
@@ -1661,7 +1661,7 @@ Both of the concepts above had to be implemented in a standard, giving
 programmers a consistent way of making the programs aware of national
 environments.
 
-Althogh the standard hasn't been finished yet, many parts actually
+Although the standard hasn't been finished yet, many parts actually
 have; so they can be used without much of a problem.
 
 I am going to outline the general scheme of making the programs use
@@ -1720,7 +1720,7 @@ without affecting the others. For example, you may decide (God knows
 why) to stick with <tt/ru_RU/ locale, but print numbers according to
 the standard POSIX one. For such cases, there is a set of environment
 variables, which you can you to configure specific parts for the
-current locale. In the last exaple it would be:
+current locale. In the last example it would be:
 
 <verb>
 LANG=ru_RU
@@ -1818,7 +1818,7 @@ type and an appropriate API.
 </enum>
 
 
-For a more detaled explanation of locale, see, for example (<ref
+For a more detailed explanation of locale, see, for example (<ref
 id="Voropay1">) or (<ref id="SingleUnix">).
 
 

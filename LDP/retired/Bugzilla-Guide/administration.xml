@@ -238,7 +238,7 @@
         <quote>f</quote>
 
         's. A whole lot of f-ing going on if you want to create a new
-        administator.</para>
+        administrator.</para>
       </tip>
     </section>
 
@@ -769,7 +769,7 @@
     <warning>
       <para>This is not meant to be a comprehensive list of every possible
       security issue regarding the tools mentioned in this section. There is
-      no subsitute for reading the information written by the authors of any
+      no substitute for reading the information written by the authors of any
       software running on your system.
       </para>
     </warning>
@@ -778,12 +778,12 @@
       <title>TCP/IP Ports</title>
 
       <!-- TODO: Make this make sense (TCP/IP) -->
-      <para>TCP/IP defines 65,000 some ports for trafic. Of those, Bugzilla
+      <para>TCP/IP defines 65,000 some ports for traffic. Of those, Bugzilla
       only needs 1... 2 if you need to use features that require e-mail such
       as bug moving or the e-mail interface from contrib. You should audit
       your server and make sure that you aren't listening on any ports you
       don't need to be. You may also wish to use some kind of firewall
-      software to be sure that trafic can only be recieved on ports you
+      software to be sure that traffic can only be received on ports you
       specify.
       </para>
     </section>
@@ -883,8 +883,8 @@ skip-networking
       <title>Web Server Access Controls</title>
 
       <para>There are many files that are placed in the Bugzilla directory
-      area that should not be accessable from the web. Because of the way
-      Bugzilla is currently layed out, the list of what should and should
+      area that should not be accessible from the web. Because of the way
+      Bugzilla is currently laid out, the list of what should and should
       not be accessible is rather complicated. A new installation method
       is currently in the works which should solve this by allowing files
       that shouldn't be accessible from the web to be placed in directory
@@ -1361,7 +1361,7 @@ skip-networking
     to version 2.16.2.  The procedures are the same regardless if you are
     updating to a new point release or a new revision.  However, the chance
     of running into trouble increases when upgrading to a new point release,
-    escpecially if you've made local changes.
+    especially if you've made local changes.
     </para>
 
     <para>These examples also assume that your Bugzilla installation is at
@@ -1470,7 +1470,7 @@ bash$ <command>./checksetup.pl</command>
       also read the release notes and grab the patches attached to the
       mentioned bug, but it is safer to use the released patch file as
       sometimes patches get changed before they get checked in (for minor
-      spelling fixes and the like). It is also theorectically possible to
+      spelling fixes and the like). It is also theoretically possible to
       scour the fixed bug list and pick and choose which patches to apply
       from a point release, but this is not recommended either as what you'll
       end up with is a hodge podge Bugzilla that isn't really any version.
@@ -1490,7 +1490,7 @@ patching file globals.pl
 
       <para>
         <caution>
-          <para>If you do this, beware that this doesn't change the entires in
+          <para>If you do this, beware that this doesn't change the entries in
           your <filename id="dir">CVS</filename> directory so it may make
           updates using CVS (<xref linkend="upgrade-cvs"/>) more difficult in the
           future.

@@ -139,7 +139,7 @@ CXX=gcc				Use gcc as your c++ compiler instead of g++.  This has the
 				build fails and complains about not being able to create this
 				file, using this switch is a good work-around.
 
---enable-thread-safe-client	Build the MySQL client binary with suport for threads.
+--enable-thread-safe-client	Build the MySQL client binary with support for threads.
 </screen>
 
 <para>Add a user and group for <command>mysqld</command> to run as:</para>
@@ -368,7 +368,7 @@ various other encodings &amp; routines.</para></listitem>
 
 <para>Of interest, the <emphasis>no-threads</emphasis> argument prevents building in support for multi-threaded applications. In the case of Apache 1.3.x, this is actually quite handy as it does not use threads in the first place. This prevents the performance overhead (memory/time) relating to these locking mechanisms from happening and thus being wasted. The <emphasis>-fPIC</emphasis> option is not needed unless you are planning on using mod_ssl as a Dynamic Shared Object (DSO), which is not covered by this document.</para> 
 
-<para>Remember, run ./config and not ./configure!  If the script failes to detect your operating system and compiler, you can instead run ./Configure and select the operating system and compiler that matches your setup. Next, running make will build the libraries libcrypto.a and libssl.a and the OpenSSL binary itself. This will take some time to complete. To run make test, you'll need to have <command>bc(1)</command>, the Unix calculator, installed; otherwise, skip that step.</para>
+<para>Remember, run ./config and not ./configure!  If the script fails to detect your operating system and compiler, you can instead run ./Configure and select the operating system and compiler that matches your setup. Next, running make will build the libraries libcrypto.a and libssl.a and the OpenSSL binary itself. This will take some time to complete. To run make test, you'll need to have <command>bc(1)</command>, the Unix calculator, installed; otherwise, skip that step.</para>
 
 <screen>
 bash$ ./config no-threads shared
@@ -394,7 +394,7 @@ bash$ ./configure \
 --with-key=/etc/ssl/certs/server.key
 </screen>
 
-<para>That's it for this portion. Once you have finished installing the rest of Apache from this document, your default httpd.conf file will have some SSL commands as well.  At a minimum, you'll definately want to tell Apache where your Server Certificate and Server Key are located:</para>
+<para>That's it for this portion. Once you have finished installing the rest of Apache from this document, your default httpd.conf file will have some SSL commands as well.  At a minimum, you'll definitely want to tell Apache where your Server Certificate and Server Key are located:</para>
 
 <screen>
 SSLCertificateFile	/etc/ssl/certs/server.crt
@@ -552,11 +552,11 @@ SSLSessionCache	shm:/usr/local/apache/logs/ssl_gcache_data(512000)
 SSLSessionCacheTimeout 300
 </screen>
 
-<para>This makes use of a high-performance hash table inside a shared memory segment in RAM. This cache is an optional facility which speeds up parallel request processing and helps to avoid unneccessary session handshakes. The path is just a hook to the shared memory (shm) along with the appoximate size in bytes listed in parenthesis. The timeout is listed in seconds and is the default setting if not specified.</para>
+<para>This makes use of a high-performance hash table inside a shared memory segment in RAM. This cache is an optional facility which speeds up parallel request processing and helps to avoid unnecessary session handshakes. The path is just a hook to the shared memory (shm) along with the approximate size in bytes listed in parenthesis. The timeout is listed in seconds and is the default setting if not specified.</para>
 </sect1>
 
 <sect1 id="crypto">
-<title>Crytographic/Hash Libraries</title>
+<title>Cryptographic/Hash Libraries</title>
 
 <sect2 id="mhash">
 <title>Mhash</title>
@@ -733,7 +733,7 @@ is a widely-used general-purpose scripting language that is especially suited fo
 				instead of your hard drive. If you've got extra RAM to spare and
 				intend to use sessions, say yes.
 
---with-sysvsem			Enable System V sempahore (specialized file locking to prevent
+--with-sysvsem			Enable System V semaphore (specialized file locking to prevent
 				simultaneous access) support.
 
 --with-apache			This builds PHP to work with Apache. Just say yes.

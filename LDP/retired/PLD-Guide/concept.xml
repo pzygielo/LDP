@@ -77,7 +77,7 @@
 			<listitem>
 				<para>
 					Apart for plain rpm, PLD provides two specialized
-					and powerfull RPM managers: clone of Debian apt,
+					and powerful RPM managers: clone of Debian apt,
 					and our own poldek.
 				</para>
 			</listitem>
@@ -140,7 +140,7 @@
 		<listitem>
 			<para>
 				Descriptions of packages and documentation comes in many languages
-				but only choosen language versions will be installed.
+				but only chosen language versions will be installed.
 			</para>
 		</listitem>
 		<listitem>

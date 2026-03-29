@@ -76,7 +76,7 @@ I will use the terms "master firewall" and "slave firewall", though making a VPN
 <sect1>Planning  
 <p>
 
-Before you start to set up your system, you should know the networking details. I assume you have two firewalls protecting one intranet per firewall, and they are both connected to the internet. So now you should have two network interfaces (at least) per firewall. Take a sheet of paper, write down their IP addresses and network mask. You will need one more IP adresses per firewall for the VPN you want to do now. Those addresses should be outside of your existing subnets. I suggest using addresses from the "private" address ranges. They are the followings:  
+Before you start to set up your system, you should know the networking details. I assume you have two firewalls protecting one intranet per firewall, and they are both connected to the internet. So now you should have two network interfaces (at least) per firewall. Take a sheet of paper, write down their IP addresses and network mask. You will need one more IP addresses per firewall for the VPN you want to do now. Those addresses should be outside of your existing subnets. I suggest using addresses from the "private" address ranges. They are the following:  
 <itemize>
 <item>10.0.0.0 - 10.255.255.255  
 <item>172.16.0.0 - 172.31.255.255  
@@ -154,7 +154,7 @@ The first row being &tilde;slave/.ssh, and the second is &tilde;slave.
 <sect1>Tighten ssh security on the bastions.  
 <p>
 
-It means the followings on my setup in sshd_conf:  
+It means the following on my setup in sshd_conf:  
 <verb>
 PermitRootLogin no  
 IgnoreRhosts yes  
@@ -321,19 +321,19 @@ Set up the routes on the master host, and on the slave also. Now you should be a
 <p>
 
 As I said this HOWTO is mainly a quick memo on how I had set up a VPN. There are things in the configuration I didn't experiment yet. These things will go into their place when I try them, or anyone tells me "it works in the following way" The most important thing is that the connection ppp uses is not 8-bit yet. I believe it has something to do either with ssh configuration or the pty setup. In this configuration ssh uses the tilde (&tilde;) character as an escape character. It might stop or slow down the communication, as any newline-tilde sequence causes ssh to give a prompt. Ssh documentation said:  &lt;On most systems, setting the escape character to ``none'' will also make the session transparent even if a tty is used.&gt; The corresponding flag to ssh is '<em>-e</em>', and you can also set it in the configuration file. 
-<sect1>Bandwith vs. cicles  
+<sect1>Bandwidth vs. cicles  
 <p>
 
 Creating anything virtual comes with utilization of real-world resources. A VPN eats up bandwidth and computing resources. The goal would be to get balance between the two. You can tune it with the '-C' switch or the 'CompressionLevel' option. You might try using another cipher, but I don't recommend it. Also note that the round-trip-time can be longer if you use better compression. Any experiments on it are welcome. 
-<sect>Vulnerability analisis  
+<sect>Vulnerability analysis  
 <p>
 
 I try to cover here the vulnerability issues arising from this particular setup and VPNs in general. Any comments are warmly welcome. 
 <itemize>
 <item>sudo: Well, I'm excessively using sudo. I believe it's still safer than using setuid bits. It's still a backdraw of Linux that it hasn't got more fine-grained access control. Waiting for POSIX.6 compatibility &lt;http://www.xarius.demon.co.uk/software/posix6/&gt;. What is worse, there are shell scripts which are getting called through sudo. Bad enough. Any idea out there? 
 <item>pppd: It runs suid root also. It can be configured by user's .ppprc. There might be some nice buffer overruns in it. The bottom line: secure your slave account as tightly as you can. 
-<item>ssh: Beware that ssh older than 1.2.20 has security holes. What is worse, we made a configuration such when the master account had been compromised, the slave account is also compromised, and wide open to attacks using the two sudoed programs. It is because I've choosen not to have password on the master's secret key to enable automatic setup of the VPN. 
-<item>firewall: With inproperly set firewall rules on one bastion, you open both of the intranets. I recommend using IP masquerading (as setting up incorrect routes is a bit less trivial), and doing hard control on the VPN interfaces.  
+<item>ssh: Beware that ssh older than 1.2.20 has security holes. What is worse, we made a configuration such when the master account had been compromised, the slave account is also compromised, and wide open to attacks using the two sudoed programs. It is because I've chosen not to have password on the master's secret key to enable automatic setup of the VPN. 
+<item>firewall: With improperly set firewall rules on one bastion, you open both of the intranets. I recommend using IP masquerading (as setting up incorrect routes is a bit less trivial), and doing hard control on the VPN interfaces.  
 </itemize>
 
 

@@ -514,7 +514,7 @@ clean:
             In general, one source file would depend on more than one
             header file (like the <filename>main.o</filename>
             dependency) and the dependency rule is not as simple as
-            this.  It is infact difficult to keep track of dependencies
+            this.  It is in fact difficult to keep track of dependencies
             on header files and their dependencies with nested includes.
             There are ways of handling this (see the manual page of
             <command>makedepend</command> on your Linux machine and the

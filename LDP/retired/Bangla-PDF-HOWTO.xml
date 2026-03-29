@@ -116,11 +116,11 @@ from the original one).</para>
  different story though as they are font independent(if created properly) and 
  has no chance of getting into this kind of chaos. Now what if one needs to
  create a Bangla text file? Easy - use Unicode. Recent developments has made it 
- possible to write Unicode based Bangla in GTK+ 2.0 (or higher) based softwares.
+ possible to write Unicode based Bangla in GTK+ 2.0 (or higher) based software.
  And the same thing is on the offing for QT (which is the backbone of KDE). 
  Even PDFs can be created from Unicode encoded Bangla text files. This has been
  described in a later <xref linkend="unicode"/>. So instead of relying on 
- nonstandard softwares like Bijoy, try to use Unicode based Bangla wherever 
+ nonstandard software like Bijoy, try to use Unicode based Bangla wherever 
  possible. </para>
     </sect2>
   </sect1>
@@ -1128,7 +1128,7 @@ EndSection
 
       <step>
         <para> A good utility to use here is <command>pdffonts</command>
-          to check whether the Bangla font has really been embeded in the newly 
+          to check whether the Bangla font has really been embedded in the newly 
           created PDF.  </para>
       </step>
     </procedure>
@@ -1163,7 +1163,7 @@ EndSection
         <para> If <command>chkfontpath</command> doesn't show any error messages then the font(s) become
           available or unavailable just after executing it. But even for RedHat, there 
           is no need to add a TrueType fontpath as <quote>Xft</quote> itself makes the fonts 
-          avilable to <application>KWord</application>. So use of <command>chkfontpath</command>
+          available to <application>KWord</application>. So use of <command>chkfontpath</command>
           for TrueType is optional.</para>
 
         <note>

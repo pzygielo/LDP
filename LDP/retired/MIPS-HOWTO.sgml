@@ -197,7 +197,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
 
  <sect1>Dan Kegel<p>
   Dan Kegel has a page at <url url="http://kegel.com/crosstool/"> with a
-  nice script to automatize the build procedure.
+  nice script to automate the build procedure.
 
 <sect>Commercial Linux<p>
 
@@ -532,7 +532,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
   microprocessors.  Many of these devices were originally designed to run
   Windows&nbsp;CE.  The project has produced working kernels with basic drivers
   for the Vadem Clio, Casio E-105, Everex Freestyle, and more.  The
-  <ref id="linux-vr" name="Linux-VR"> has developped support for these
+  <ref id="linux-vr" name="Linux-VR"> has developed support for these
   systems.
 
   <sect2>Toshiba TMPR39xx/Philips PR31700 platforms<p>
@@ -540,7 +540,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
    Similar to the VR41xx, devices with these processors were originally
    intended for running Windows&nbsp;CE. However, there are working kernels
    with basic drivers for <em>Sharp Mobilon</em> and the <em>Compaq
-   C-Series</em>.  The <ref id="linux-vr" name="Linux-VR"> has developped
+   C-Series</em>.  The <ref id="linux-vr" name="Linux-VR"> has developed
    support for these systems.
 
  <sect1><label id="never">Hardware we're never going to support<p>
@@ -609,7 +609,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
   main difference being the R4000 only having primary caches of each 8kb
   while the R4400 has twice that.  Consequently these two processors do
   identify themselves both as type 4 in the c0_PrId register but a different
-  version number while marketing decieded to market the somewhat improved
+  version number while marketing decided to market the somewhat improved
   R4400 as a great and new product.  R4000 processors have version numbers upto
   3.0; R4400 processors do identify themselves as version 4.0 and newer.
   As a consequence of the R4400 being sold as new product they also started
@@ -722,7 +722,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
    general those that are used by more users experience more scrutiny and
    therefore are better maintained.<p>
 
-   Kernels downloaded from kernel.org in general don't have uptodate MIPS
+   Kernels downloaded from kernel.org in general don't have up-to-date MIPS
    support so they may not compile at all or work as well as those from
    linux-mips.org - where optimal MIPS support is the only focus.<p>
 
@@ -862,7 +862,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
    The preferable solution for this is of course a PROM upgrade but that isn't
    available for all systems.<p>
 
-   For systems which still have the sash of IRIX 5 installed it is alternativly
+   For systems which still have the sash of IRIX 5 installed it is alternatively
    possible use Sash to boot the kernel.  Sash knows how to load ELF binaries
    and doesn't care if it's an IRIX or Linux kernel.  Simply type ``Sash'' to
    the PROM monitor.  You'll get another shell prompt, this time from Sash.
@@ -1453,7 +1453,7 @@ url="ftp://ftp.mips.com/pub/tools/software/sde-for-linux/sdelinux-5.01-1.mips.rp
    have to care of your steps yourself.
 
   <sect2>Crosscompilation<p>
-   The kernel has been carefully developped to ensure crosscompilation on a
+   The kernel has been carefully developed to ensure crosscompilation on a
    non-MIPS system is possible.  Once you've managed to get around the cliff of
    setting up a crosscompiler crosscompiling is easy.  To do so you have two
    options.  First you can pass CROSS_COMPILE=&lt;target>- (note the trailing

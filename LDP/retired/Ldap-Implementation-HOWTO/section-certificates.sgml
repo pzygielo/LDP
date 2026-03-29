@@ -1,7 +1,7 @@
 <SECT1 ID="certificates"><TITLE>Publishing digital certificates with LDAP</TITLE>
 
 <PARA> This section focuses on how to publish digital certificates into an ldap
-server. You need to publish digital certificates if you run a Certificaton
+server. You need to publish digital certificates if you run a Certification
 Authority. Publishing to LDAP is a simple way to make this information available
 in the network .Also many certificate aware software uses LDAP as a preferred
 repository for user certificates.
@@ -50,7 +50,7 @@ include        /usr/local/etc/openldap/schema/inetorgperson.schema
 
 <SECT2><TITLE>Certificate Publishing</TITLE>
 
-<PARA> Certificates are encoded using ASN.1 DER (Distingushed Encoding Rules).
+<PARA> Certificates are encoded using ASN.1 DER (Distinguished Encoding Rules).
 So it must be published into the LDAP server as a binary piece of data (using
 BER encoding).  </PARA>
 
@@ -119,7 +119,7 @@ userCertificate;binary:< file:///path/to/cert.der
 <PARA>Once you stored certificates in the server you may wonder to retrieve
 them.</PARA>
 
-<PARA> Among other clients, Netscape has supprt to retrieve certificates
+<PARA> Among other clients, Netscape has support to retrieve certificates
 automatically from an LDAP server. Using the Security Panel-->User
 Certificates-->Search Directory; you can search  for certificates in the LDAP
 dierctory and have them automatically installed in your Netscape certificate

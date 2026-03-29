@@ -1017,7 +1017,7 @@ Start the server just as you normally would:
   <title>Q2Admin</title>
   
 <para>
-<ulink url="http://www.planetquake.com/q2admin/">Q2Admin</ulink> is a very good transparent proxy modificatiom that adds many admin functions, and the most important, ZBot/Ratbot (among other things) detection to preven cheating.
+<ulink url="http://www.planetquake.com/q2admin/">Q2Admin</ulink> is a very good transparent proxy modificatiom that adds many admin functions, and the most important, ZBot/Ratbot (among other things) detection to prevent cheating.
 Q2Admin works with all Q2 mods transparently by filtering communication between the server and the mod it's running on top of.
 I recommend that you install Q2Admin if you're going to run a public server. Download this file:
 </para>
@@ -1258,7 +1258,7 @@ Use <literal>+set dedicated 1</literal> to run a private server or <literal>+set
 <itemizedlist>
 <listitem><para><emphasis>Alliance</emphasis> - Enhanced CTF with offhanded grappling hook (players can use the grapple and shoot their weapons at the same time).</para></listitem>
 <listitem><para><emphasis>Combat</emphasis> - Resembles the mod Expert Q2. Players spawn with all weapons plus health and ammo regenerate. Slightly different weapons balance, physics and grappling hook style.</para></listitem>
-<listitem><para><emphasis>Instagib</emphasis> - An interesting (and very entertaining) game type where players spawn with an enhanced rail gun with an infinite ammount of ammo. When you shoot your enemy they are instantly gibbed (killed), so health is not an issue here (also, the rail gun is the only weapon).</para></listitem>
+<listitem><para><emphasis>Instagib</emphasis> - An interesting (and very entertaining) game type where players spawn with an enhanced rail gun with an infinite amount of ammo. When you shoot your enemy they are instantly gibbed (killed), so health is not an issue here (also, the rail gun is the only weapon).</para></listitem>
 </itemizedlist>
 </para>
 

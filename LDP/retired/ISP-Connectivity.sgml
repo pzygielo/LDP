@@ -52,8 +52,8 @@ name="http://sunsite.unc.edu/LDP/">
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <sect1> Feedback
 <p>
-I certaintly welcome any feedback about this HOWTO, spelling mistakes,
-how it all worked out, thankyou notes and critisisms. I hope I helped
+I certainly welcome any feedback about this HOWTO, spelling mistakes,
+how it all worked out, thankyou notes and criticisms. I hope I helped
 a few people with this HOWTO, and if I did, I'd be really happy to
 hear from you. 
 <p>
@@ -160,7 +160,7 @@ connection. Simply modify either the first johnny or the second johnny
 script to suit your taste, port, server, etc and save the file.
 <p>
 Now you've made your file, ensure that only root can execute, read or
-write to it. This is extreemly important. Also make sure nobody can
+write to it. This is extremely important. Also make sure nobody can
 read your logfiles, if you decide to leave the -v option in, as your
 password is seen in cleartext in the logs (I don't see much need for -v,
 if you don't know what I'm talking about, leave -v out).
@@ -244,7 +244,7 @@ Electronic Mail.
 <p>
 One of the most important aspects of the Internet, is it's fasinating
 capaiblity to transfer mail to and from countries, or more locally
-perhaps. Linux is extreemly strong in easy mail packages for the console.
+perhaps. Linux is extremely strong in easy mail packages for the console.
 The one we're going to document today is called Pine (Program for Internet
 Mail and News), made by the University of Washington, and to download the
 mail, a program called Fetchmail, made by Eric S. Raymond. Both should be
@@ -267,7 +267,7 @@ the mail server of your ISP, <EM>your_passwd</EM> with your password, and
 <EM>login_name</EM> with your login name. 
 <p>
 An important thing to note. For Pine and this procedure to work correctly,
-your login name must corrospond with the login name you use on your ISP.
+your login name must correspond with the login name you use on your ISP.
 That is your local login name must match the one you use on your server,
 and your e-mail address.
 <p>

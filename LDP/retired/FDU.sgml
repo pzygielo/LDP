@@ -314,7 +314,7 @@ Time to modify xf86ttfontool again, I think.
 More reading here:
 http://www.kottke.org/02/08/020813the_case_of_.html
 
-And even a MS explination of sorts:
+And even a MS explanation of sorts:
 http://typographi.ca/2002_08_13.php#000428
 
 
@@ -408,8 +408,8 @@ Changes 1.8
   <listitem>
    <para>
      <quote>X</quote> and <quote>XFree86</quote> are (incorrectly) used 
-     here interchangably. The overwhelming percentage of Linux users indeed
-     use XFree86.org's X implementation, but there are other implentations 
+     here interchangeably. The overwhelming percentage of Linux users indeed
+     use XFree86.org's X implementation, but there are other implementations 
      as well. The information here probably does not apply to those others in
      most cases.
    </para>
@@ -2892,7 +2892,7 @@ edit
  This will add anti-aliasing support to GTK+ 1.2 applications (only!). This is
  a stand-alone library and not a patch. It will only effect GTK+ 1.x widgets
  (many of them but not all). There are some limitations, but mostly it works
- as advertized. Read the included <filename>README</filename> closely, and
+ as advertised. Read the included <filename>README</filename> closely, and
  follow the instructions. An initial installation provides a good starting
  point. I added some font families to <filename>/etc/gdkxft.conf</filename>
  and I used some of Danny's suggestions above, and it seems to work
@@ -3395,7 +3395,7 @@ edit
  pref("font.FreeType2.autohinted", true);
  pref("font.FreeType2.unhinted", false);
  
- // below a certian pixel size anti-aliased fonts produce poor results
+ // below a certain pixel size anti-aliased fonts produce poor results
  pref("font.antialias.min",        10);
  pref("font.embedded_bitmaps.max", 1000000);
  pref("font.scale.tt_bitmap.dark_text.min", 64);

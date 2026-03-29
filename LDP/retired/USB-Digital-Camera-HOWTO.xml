@@ -38,7 +38,7 @@ USB Digital Camera HOWTO 1.0 History:
 2002/03/19 Added text to sections: 1.2, 6.0, 4.4.;dek
 2002/03/19 Added appendix C.;dek
 2002/04/13 Converted to HTML;dek
-2002/04/15 Submited to LDP;dek
+2002/04/15 Submitted to LDP;dek
 -->
 </bookinfo>
 
@@ -559,11 +559,11 @@ command. <emphasis>BUT BE VERY VERY CAREFUL</emphasis>:</para>
 [bash]$ rm -Rf picture/test_directory
 </screen>
 
-<para>You could lose more than you bargin for, <filename>test_directory</filename> 
+<para>You could lose more than you bargain for, <filename>test_directory</filename> 
 should be what you entered for <envar>$DIRPATH</envar> in the scripts above. (It 
 never hurts for first time user to slip over somewhere else and create a 
 directory tree, copy file to it, and test this command line before using it on 
-something irreplacable.) Again read the manual.</para>
+something irreplaceable.) Again read the manual.</para>
 
 </appendix>
 

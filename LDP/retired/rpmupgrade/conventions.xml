@@ -54,7 +54,7 @@
         keysym, shortcut, accel)</para></listitem>
 
         <listitem>
-<para>Precede commands with a prompt that mimicks the real 
+<para>Precede commands with a prompt that mimics the real 
       prompt. Use a "$" as the user's shell prompt and "#" as the
         root shell prompt. Also name the application that 
         generates the prompt. Tag them with
@@ -73,7 +73,7 @@ it inside of releaseinfo.</para></listitem>
 <para>Use these terms: Gbyte, Mbyte, Kbyte, byte.</para></listitem>
 
 <listitem>
-<para>Use this spelling : dependant, not dependent</para></listitem>
+<para>Use this spelling : dependent, not dependent</para></listitem>
 
 <listitem>
 <para>make a note to merge/remove the .rpmsave files.</para>

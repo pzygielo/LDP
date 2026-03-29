@@ -203,7 +203,7 @@ acceptable performance on the client side.</PARA>
 clients libraries (pam_ldap.so and nss_ldap.so), since sensible data, such as
 password entries, needs to be encrypted between the client and the server. SLL
 also permits the client to uniquely identify the server, thus avoiding to
-obtain authentication informations from an untrusted source.</PARA>
+obtain authentication information from an untrusted source.</PARA>
 
 <PARA>Client authentication (the server identifies the client) is not supported
 in the current implementation of pam_ldap and nss_ldap modules tough it may be

@@ -51,7 +51,7 @@
     <status>actively developed</status>
     <location>geninitrd</location>
     <description>
-      Script to automagicaly generate initial ramdisk image for highly 
+      Script to automagically generate initial ramdisk image for highly 
       modularized kernels.
     </description>
   </project>

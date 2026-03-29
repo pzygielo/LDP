@@ -10,7 +10,7 @@ and then invokes the login program.</para>
 <para><command>blockdev</command> allows you to call block device ioctls
 from the command line.</para>
 
-<para><command>cal</command> displays a simple calender.</para>
+<para><command>cal</command> displays a simple calendar.</para>
 
 <para><command>cfdisk</command> is used to manipulate the partition table
 of the given device.</para>

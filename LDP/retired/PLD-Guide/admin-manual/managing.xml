@@ -15,9 +15,9 @@
 			work properly (or to work at all :-). Keeping track of those
 			dependencies would be a real pain in the ass for most
 			administrators.	Fortunately there are tools that can not only
-			automate this task but also help you in instaling, uninstaling and
+			automate this task but also help you in installing, uninstaling and
 			upgrading packages. In PLD the system of choice is 
-			<emphasis>RPM</emphasis> - the RPM Packet Manager. Originaly
+			<emphasis>RPM</emphasis> - the RPM Packet Manager. Originally
 			developed for the Red Hat Linux Distribution
 			the RPM has been widely adopted and is currently the most
 			popular (and powerful) packet management software available.
@@ -56,7 +56,7 @@ error: failed dependencies:
 		</para>
 
 		<para>
-			Upgrading packages is done analogicaly as installing them but
+			Upgrading packages is done analogically as installing them but
 			you should use the <emphasis>-U</emphasis> switch. Like so:
 
 			<programlisting>
@@ -72,7 +72,7 @@ error: failed dependencies:
 
 		<para>
 			We successfully installed a couple of packages. Now let's try to
-			uninstall them. The appropriate swith is <emphasis>-e</emphasis>.
+			uninstall them. The appropriate switch is <emphasis>-e</emphasis>.
 			<programlisting>
 [root@home /]# rpm -e libghttp-devel-1.0.9-4.i686.rpm libghttp-1.0.9-4.i686.rpm
 error: package libghttp-devel-1.0.9-4.i686.rpm is not installed
@@ -111,13 +111,13 @@ error: package libghttp-1.0.9-4.i686.rpm is not installed
 	<section id="managing-poldek">
 		<title>POLDEK</title>
 		<para>
-			Rpm is a powerfull tool but not too comfortable when you need
+			Rpm is a powerful tool but not too comfortable when you need
 			to install lots of packages with lots of dependencies. 
-			Fortunatelly there are tools to automate these tasks.
+			Fortunately there are tools to automate these tasks.
 		</para>
 		<para>
 			One of such tools is called poldek. Specifically developed for
-			the PLD Linux Distribution poldek is a powerfull and easy to
+			the PLD Linux Distribution poldek is a powerful and easy to
 			use tool that can make an admins live much easier (and it's used
 			in the installer too :-).
 		</para>

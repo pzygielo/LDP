@@ -345,7 +345,7 @@ konq_popupmenu.cc.patch: right-mouse menu on icons on the desktop
 <guimenuitem>Delete</guimenuitem>, ... but no <guimenuitem>Open With
 ...</guimenuitem>,
   no <guimenuitem>Edit File Type...</guimenuitem> and no
-<guimenuitem>Poperties...</guimenuitem> dialogs. 
+<guimenuitem>Properties...</guimenuitem> dialogs. 
 </para>
      </listitem>
 
@@ -527,7 +527,7 @@ fi
 
 <para>
 We also have two kdedirs that looks like to separate installations of
-KDE, this was neccessary so "normal" users could still have a
+KDE, this was necessary so "normal" users could still have a
 full-featured KDE. So we have an original kdedir, and a restricted
 kdedir, in which we removed entries under
 <filename>share/applnk</filename> and set the variable

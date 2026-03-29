@@ -128,7 +128,7 @@ They are listed below:</para>
 
    <itemizedlist>
       <listitem><para>-t &lt;table&gt;: This specifies the table to work on. If
-      -t is ommited then the "filter" table is specified.</para></listitem> 
+      -t is omitted then the "filter" table is specified.</para></listitem> 
       <listitem><para>-L &lt;chain&gt;: List all rules in the specified chain.
       If the chain is not specified it lists all chains and rules in the
       current table.</para></listitem>
@@ -151,14 +151,14 @@ They are listed below:</para>
 
    <para>That is the main commands outlined, the rest of the commands are 
    well documented in the man page IPTABLES(8). It also contains the flags
-   for useage in rules. I won't list them here because there are too many.
+   for usage in rules. I won't list them here because there are too many.
    </para>
 
 </sect1>
 
 <sect1 id="tables">
 <title>Tables, Chains and the like</title>
-<para>There are two main definitons that need to be set out here. The first 
+<para>There are two main definitions that need to be set out here. The first 
 is a table. Tables contain a set of chains, either built-in or user-defined. 
 The main two tables you will encounter are the "filter" table and the "nat" 
 table.</para>
@@ -201,7 +201,7 @@ they are checked for routing, if the packet is inbound to the local machine
 down the INPUT chain.</para>
 
 <para>In its current state the chain is wide open. This is due to the policy.
-When the Tables are initalised each policy is set to ACCEPT, the policy defines
+When the Tables are initialised each policy is set to ACCEPT, the policy defines
 what happens when a packet meets none of the rules in the chain. To use an
 analogy it is what happens if it drops off the end of the chain.</para>
 
@@ -219,14 +219,14 @@ anything dropped will not.</para>
 <sect3>
 <title>The FORWARD chain</title>
 <para>The FORWARD chain is also an important chain, especially if you plan on
-masquerading or NAT'ing your conenctions. As with the INPUT chain the packets 
+masquerading or NAT'ing your connections. As with the INPUT chain the packets 
 appear here after routing but when the routing specifies that the packet is 
 bound for a machine on the network other than itself.</para>
 
 <para>For instance, if you are using Masquerading and a incoming packet from
 the internet enters the network interface the packet would be processed by the
 routing information and enter the FORWARD chain as it is bound for another
-machine. If the packet is accepted (or is accpeted by policy) then it proceeds
+machine. If the packet is accepted (or is accepted by policy) then it proceeds
 to the destination (and possibly into its INPUT chain if its running Linux), if
 however it is dropped then it proceeds no further and it is dumped into the
 nearest blackhole.</para>
@@ -310,7 +310,7 @@ tries to make sure all connections are closed, this is logical is it is
 unlikely you will have the same IP when the adapter comes up again.</para>
 
 <para>Source NAT is different, it leave ports open. This is made for Static IP
-based conenctions, if for some reason your interface dies then when it goes 
+based connections, if for some reason your interface dies then when it goes 
 live again it will have to same IP. So, if there have been no timeouts and all
 applications still _assume_ they are connected they carry on as usual.</para>
 
@@ -360,7 +360,7 @@ on port 80 to be accepted.</para>
 <sect3>
 <title>Target: ACCEPT</title>
 <para>This is what is says, it allows a matching packet to continue unhindered.
-Also, once a packet has been accpeted it no longer traverses the chain. So if 
+Also, once a packet has been accepted it no longer traverses the chain. So if 
 the above chain allows a packet it is universally allowed. A moral is in this
 tale!! If you have any mission critical filters to be tested on all packets
 before any are allowed then put them at the top of the chain</para>
@@ -378,7 +378,7 @@ times out.</para>
 <sect3>
 <title>Target: REJECT</title>
 <para>This is similar to DROP, firstly in the netfilter code it is created as
-a seperate module (ipt_REJECT.o) and as such needs to be at the very least
+a separate module (ipt_REJECT.o) and as such needs to be at the very least
 compiled if not modprobe'd. Compared to DROP the only difference it a REJECTed
 packet has a response sent to the originator saying that it failed. I tend to
 use DROP as its stealthy but REJECT has its uses.</para>
@@ -396,14 +396,14 @@ network.</para>
 its problems. Firstly, you can't get in to you machine, soo if like me you
 administer your box via SSH you've just cut yourself off. Secondly, no one can
 get out either, so the machine itself is unable to get on the internet. Yes,
-you can't get through either, if your DROPing all your packets you can't
+you can't get through either, if your dropping all your packets you can't
 forward them as well.</para>
 
 <para>To change policies you would do the following:</para>
 <para><command>iptables -P INPUT DROP</command></para>
 
 <para>If you are making a ruleset for running at startup then you may want to
-policiy all of these off. However, if you are experimenting I suggest caution 
+policy all of these off. However, if you are experimenting I suggest caution 
 (or at least to use a local console).</para>
 
 </sect2>
@@ -431,13 +431,13 @@ you webserver to operate if you've change the OUTPUT policy.</para>
 <para>The <command>--destination-port</command> can be used in the opposite
 way, allowing you to match the port to which the packet is destined to go to.
 So on the INPUT chain it matches the local port while on the OUTPUT chain
-it matches the remote port. So then, to allow traffic into your machien via 
+it matches the remote port. So then, to allow traffic into your machine via 
 the input filter you could match packets destined for port 80 on your
 local machine and ACCEPT them.</para>
 
 <para><emphasis role="strong">Syntax:</emphasis></para>
 <itemizedlist>
-   <listitem><para>-p [!] &lt;protocol&gt;: Protocol is reqiured. Can be a
+   <listitem><para>-p [!] &lt;protocol&gt;: Protocol is required. Can be a
    builtin (such as www, ftp, etc), port number or any service from
    <filename>/etc/services</filename>. ! can be specified to negate the
    parameter, or more easily put using ! will watch everything but the 
@@ -521,7 +521,7 @@ originating from your network (use it in Masq'ing).</para>
    </para></listitem>
    <listitem><para>ESTABLISHED, a packet that is part of an already established
    TCP conversation.</para></listitem>
-   <listitem><para>RELEATED, when a packet is starting a new connection but is
+   <listitem><para>RELATED, when a packet is starting a new connection but is
    in some way related to an existing connection.</para></listitem>
 </itemizedlist> 
 
@@ -547,7 +547,7 @@ arrange you rulesets and how things tie together.</para>
 
 <sect2>
 <title>What do you need in a firewall?</title>
-<para>Why do you want a firewall? With the rise in broadband connecitons with
+<para>Why do you want a firewall? With the rise in broadband connections with
 more permanent IP address (not always static though) it is much easier to
 conduct attacks on certain people as the IP's stay pointing to the same machine
 for longer. Do you run a webserver? Do you want to stop any chance of easily
@@ -588,7 +588,7 @@ nothing allowed out) and then open up the ports we need.</para>
 
 <para>To seal the machine off the best way is to reset all the policies to 
 DROP. In that way nothing works (you need to be sat at the console to do this)
-and nothign can get in. To seal off the policies use this command:</para>
+and nothing can get in. To seal off the policies use this command:</para>
 
 <para><command>iptables -P INPUT DROP</command></para>
 <para><command>iptables -t nat -P PREROUTING DROP</command></para>
@@ -605,7 +605,7 @@ secure the machine.</para>
 Now that you have blocked all access into your computer we need to let some
 people back in. This is done by specifically allowing ports to be opened. Out 
 of ease I usually leave the OUTPUT chain open so once you've opened ports
-you should see soem immediate action when you try and open a connection, say
+you should see some immediate action when you try and open a connection, say
 to test your web server. </para>
 
 <para>The following commands are used to open a port, or in-fact close on if 

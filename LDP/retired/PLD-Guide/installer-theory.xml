@@ -892,7 +892,7 @@
 		      Extra kernel modules needed to support dest_devices (or to source
 		      if you are installing from SCSI cdrom or disk). It is space decimated
 		      list of modules to load. It can be also single word <literal>auto</literal>
-		      which instructs the installer to automagicaly detect it.
+		      which instructs the installer to automagically detect it.
 		    </para>
 		    <para>
 		      If you want to install <emphasis>from</emphasis> SCSI, you need to 
@@ -1055,7 +1055,7 @@
 		      <note>
 			<para>
 			  stride=X ext2 option for RAID drives is computed
-			  and added automagicaly, unless specified here.
+			  and added automagically, unless specified here.
 			</para>
 		      </note>
 		    </para>

@@ -59,7 +59,7 @@ Translations into Japanese (Ryoichi Sato &lt;rsato@ipf.de&gt;), Italian (Alessan
 <p>
 Please contact me before starting a translation to avoid double work. Since a translation is a great amount of work, I recommend to do this work as a group.
 <p>
-Nearly all of the programms I mention are available as <url url="http://www.debian.org" name="Debian/GNU Linux"> packages, or as RPM packages, look up your favorite RPM server, for instance <url url="http://rufus.w3.org/linux/RPM/ByName.html" name="RUFUS"> .
+Nearly all of the programs I mention are available as <url url="http://www.debian.org" name="Debian/GNU Linux"> packages, or as RPM packages, look up your favorite RPM server, for instance <url url="http://rufus.w3.org/linux/RPM/ByName.html" name="RUFUS"> .
 <p>
 The latest version of this document is available in different formats at <url url="http://tuxmobil.org/" name="TuxMobil"> .
 
@@ -364,7 +364,7 @@ Sometimes it's difficult to know what manufacturer has built the machine or part
 <url url="http://www.linux-mandrake.com/lothar/" name="The Lothar Project">
 is a Mandrake-related project to provide a GUIed interface to get at hardware 
 configuration information on Linux-based systems. It provides a
-library for different system informations, too.
+library for different system information, too.
 <p>
 Many laptops are no more compatible with Windows than Linux. David Hinds, author of the PCMCIA drivers, points out that Toshiba notebooks use a proprietary Toshiba PCMCIA bridge chip that exhibits the same bugs under Windows as under Linux. IBM Thinkpads have serious BIOS problems that affect delivery of events to the power management daemon <tt>apmd</tt>. These bugs also affect MS-Windows, and are listed in IBM's documentation as <it>considerations</it>.
 <p>
@@ -518,7 +518,7 @@ Note this chapter isn't ready yet. Please read the according HOWTOs first.
 <p>
 <sect2>GNU parted
 <p>
-<url url="http://www.alphalink.com.au/~clausen/parted/" name="GNU parted"> allows you to create, destroy, resize and copy partitions. It currently supports ext2 and fat (fat16 and fat32) filesystems, and MS-DOS disklabels. This program can destroy data, and is not yet safe for general use. <tt>parted</tt> is currently in its early developement stage.
+<url url="http://www.alphalink.com.au/~clausen/parted/" name="GNU parted"> allows you to create, destroy, resize and copy partitions. It currently supports ext2 and fat (fat16 and fat32) filesystems, and MS-DOS disklabels. This program can destroy data, and is not yet safe for general use. <tt>parted</tt> is currently in its early development stage.
 
 <sect2>ext2resize
 <p>
@@ -586,7 +586,7 @@ I have described how to copy an already existing partition, but it might be also
 
 <sect2>Prerequisites
 <p>
-You need two machines equipped with Linux. With the laptop (client/destination) on which you want to install Linux use the muLinux floppy. The other machine (server/source) may be a usual Linux box or also using muLinux. Though its low transfer rate I use a serial null modem cable because its cheap. You may apply the according method using a PCMCIA network card and a crossover network cable or a HUB, or a parallel &dquot;null modem&dquot; cable and PLIP. As the basic protocol I used PPP, but you may also use SLIP. For the data-transfer I used <tt>nc</tt>. Note: this is an abbrevation for <tt>netcat</tt>, some distributions use this as the program name. You may use <tt>ftp</tt>, <tt>tftp</tt>, <tt>rsh</tt>, <tt>ssh</tt>, <tt>dd</tt>, <tt>rcp</tt>, <tt>kermit</tt>, <tt>NFS</tt>, <tt>SMB</tt> and other programs instead.
+You need two machines equipped with Linux. With the laptop (client/destination) on which you want to install Linux use the muLinux floppy. The other machine (server/source) may be a usual Linux box or also using muLinux. Though its low transfer rate I use a serial null modem cable because its cheap. You may apply the according method using a PCMCIA network card and a crossover network cable or a HUB, or a parallel &dquot;null modem&dquot; cable and PLIP. As the basic protocol I used PPP, but you may also use SLIP. For the data-transfer I used <tt>nc</tt>. Note: this is an abbreviation for <tt>netcat</tt>, some distributions use this as the program name. You may use <tt>ftp</tt>, <tt>tftp</tt>, <tt>rsh</tt>, <tt>ssh</tt>, <tt>dd</tt>, <tt>rcp</tt>, <tt>kermit</tt>, <tt>NFS</tt>, <tt>SMB</tt> and other programs instead.
 
 Basic requirements are:
 
@@ -714,7 +714,7 @@ Speed optimization has to be done, <tt>asyncmap 0</tt> or <tt>local</tt>?</item>
 <item>
 I checked this only with a destination partition greater than the source partition. Please check <tt>dd</tt> instead of <tt>cat</tt> therefore.
 <p>
-Or do the following (untested): At the destination machine <tt>cd</tt> into the root directory <file>/</file> and do <tt>nc -l -p 5555 | bzip2 -dc | tar xvf -</tt>. At the source machine <tt>cd</tt> into the root directory <file>/</file> and do <tt>tar cvf - . | bzip2 | nc -w 3 192.168.0.2 5555</tt>. This should shorten the time needed for the operation, too. Because only the allocated blocks need to be transfered.
+Or do the following (untested): At the destination machine <tt>cd</tt> into the root directory <file>/</file> and do <tt>nc -l -p 5555 | bzip2 -dc | tar xvf -</tt>. At the source machine <tt>cd</tt> into the root directory <file>/</file> and do <tt>tar cvf - . | bzip2 | nc -w 3 192.168.0.2 5555</tt>. This should shorten the time needed for the operation, too. Because only the allocated blocks need to be transferred.
 
 <item>
 Don't <tt>mount</tt> the destination partition.</item>
@@ -951,7 +951,7 @@ WARNING: The package is not intended for the end user, and some of the utilities
 
 <item>You may also use the <it>hardware surveys</it> mentioned below.
 
-<item>And as a last ressort, you may even <it>open the laptop</it> and look at the writings at the chipsets themselfs.
+<item>And as a last ressort, you may even <it>open the laptop</it> and look at the writings at the chipsets themselves.
 
 </enum>
 
@@ -1458,7 +1458,7 @@ suspend/resume is more-or-less incompatible with X.&dquot;
 <htmlurl url="http://www.linuxlaptops.com/ll/xresume.html" name="Linux Laptops">
 has created a fix for this problem.
 <p>
-Sometimes X windows and APM don't work smoothly together, the machine might even hang. A recommendation from Steve Rader: Some linux systems have their X server hang when doing <tt>apm -s</tt>. Folks with this affliction might want switch to the console virtual terminal then suspend <tt>chvt 1; apm -s</tt> as root, or, more appropiately.<tt>sudo chvt 1; sudo apm -s</tt>. I have these commands in a script, say, <tt>my-suspend</tt> and then do <tt>xapmload --click-command my-suspend</tt> .
+Sometimes X windows and APM don't work smoothly together, the machine might even hang. A recommendation from Steve Rader: Some linux systems have their X server hang when doing <tt>apm -s</tt>. Folks with this affliction might want switch to the console virtual terminal then suspend <tt>chvt 1; apm -s</tt> as root, or, more appropriately.<tt>sudo chvt 1; sudo apm -s</tt>. I have these commands in a script, say, <tt>my-suspend</tt> and then do <tt>xapmload --click-command my-suspend</tt> .
 
 <sect2>Modularization of APM
 <p>
@@ -1479,7 +1479,7 @@ a squeal of feedback when you wake up the machine.  A script in
 <sect2> Software Suspend
 <p>
 <htmlurl url="http://falcon.sch.bme.hu/&tilde;seasons/linux/swsusp.html" name="Software suspend">
-enables the possibilty of suspendig machine. It doesn't need APM. You may suspend your machine by either pressing Sysrq-d
+enables the possibility of suspendig machine. It doesn't need APM. You may suspend your machine by either pressing Sysrq-d
 or with 'swsusp' or 'shutdown -z (patch for sysvinit needed). It creates an image which is saved in your active swaps. By the
 next booting the kernel detects the saved image, restores the memory from it and then it continues to run as before you've
 suspended. If you don't want the previous state to continue use the 'noresume' kernel option. 
@@ -1601,7 +1601,7 @@ case &dquot;$SOCKETS&dquot; in
 
 &dquot;Socket 3&dquot;)
 echo Laptop is in Dockingstation ...
-echo Disabeling internal LCD Display for X11
+echo Disabling internal LCD Display for X11
 echo
 cp /etc/XF86Config_extern /etc/XF86Config
 &num;
@@ -1744,7 +1744,7 @@ Most notebooks today come with CD drives. If floppy and CD drive are swappable t
 <p>
 <sect2>Linux Compatibility Check
 <p>
-Useful programms are <tt>hdparm</tt>, <tt>dmesg</tt>, <tt>fsck</tt> and <tt>fdisk</tt> .
+Useful programs are <tt>hdparm</tt>, <tt>dmesg</tt>, <tt>fsck</tt> and <tt>fdisk</tt> .
 
 <sect2>Miscellaneous
 <p>
@@ -1774,7 +1774,7 @@ AFAIK there is only one form factor for harddisks used in laptops the 2.5&dquot;
 
 </itemize>
 
-It might be possible to use a hard disk wich doesn't fit with some case modifications.
+It might be possible to use a hard disk which doesn't fit with some case modifications.
 <p>
 Some laptops come with a removable hard disk in a tray, for instance the KAPOK 9600D. There seem to be no SCSI drives for laptops available.
 
@@ -2224,7 +2224,7 @@ Indirect email (over pop mail server) while not connected to the ethernet at wor
 Use any emailer, e.g. <tt>elm</tt> or the simple <tt>mail</tt> command.</item>
 
 <item>
-Sort incomming email, delete spam, split email-collections (digests) into seperate emails</item>
+Sort incoming email, delete spam, split email-collections (digests) into separate emails</item>
 
 </itemize>
 
@@ -2277,7 +2277,7 @@ guest1
 guest1.somewhere.org
 </code>
 
-It is important to have all aliases in this file, otherwise <tt>sendmail</tt> will not accept the mail (and will reply <it>we don't relay</it> to the sender). Finally, you must now test the setup by sending email, replying to mail for all possible configurations. Any missconfiguration can result in loss of email.
+It is important to have all aliases in this file, otherwise <tt>sendmail</tt> will not accept the mail (and will reply <it>we don't relay</it> to the sender). Finally, you must now test the setup by sending email, replying to mail for all possible configurations. Any misconfiguration can result in loss of email.
 
 <sect3>Configuration for fetchmail on Laptop
 <p>
@@ -2408,9 +2408,9 @@ fi
 exit 0
 </code>
 
-<sect3>Processing Incomming E-Mail with procmail
+<sect3>Processing Incoming E-Mail with procmail
 <p>
-This step is completely optional. The above described sendmail configuration calls <tt>procmail</tt> for each received email, but you could have called <tt>procmail</tt> using the <tt>.forward</tt> file (see the procmail man page). Procmail is a handy tool to block spam and to sort incomming email. 
+This step is completely optional. The above described sendmail configuration calls <tt>procmail</tt> for each received email, but you could have called <tt>procmail</tt> using the <tt>.forward</tt> file (see the procmail man page). Procmail is a handy tool to block spam and to sort incoming email. 
 
 You need to setup a <tt>.procmailrc</tt> file to use <tt>procmail</tt>. See the man page for procmail, procmailrc, and procmailex (examples). My setup demonstrates, how to ignore certain email messages and split email-collections (digest) into pieces:
 
@@ -2423,7 +2423,7 @@ LOGFILE=&dollar;MAILDIR/from
 &num; use &dquot;:0:&dquot; when writing to a file
 &num; use &dquot;:0&dquot;  when writing to a device, e.g. /dev/null, or send email
 
-&num; - make first a backup of *all* incomming email (but ignore mail tagged below) -
+&num; - make first a backup of *all* incoming email (but ignore mail tagged below) -
 :0 c:
 *! &circ;Sissa-Repro
 backup
@@ -2432,7 +2432,7 @@ backup
 :0 ic
 | cd backup &amp;&amp; rm -f dummy `ls -t msg.* | sed -e 1,50d`
 
-&num; - delete email comming through the 'postdocs' email list, when
+&num; - delete email coming through the 'postdocs' email list, when
 &num; it is not of any interest
 :0
 * &circ;From.*postdocs
@@ -2463,7 +2463,7 @@ TITLE=| formail -xTitle:
 :0 a
 |formail -A &dquot;Subject: &dollar;TITLE &dquot; -s procmail
 
-&num; 2.2. store in my incomming sissa-email folder. Here, we could
+&num; 2.2. store in my incoming sissa-email folder. Here, we could
 &num;      also reject (and thereafter delete) uninteresting 'Subjects'
 &num;      we could also mark more interesting subjects as urgend or send a copy
 &num;      to regular mail box.
@@ -2530,9 +2530,9 @@ software like CVS (Concurrent Version System) are a perfect tool when
 you work on several machines and you have trouble keeping them in sync
 (something which is often called "disconnected filesystems" in the
 computer science literature).  Unlike programs like rsync, which are
-assymetric (one side is the master and its files override those of the
+asymmetric (one side is the master and its files override those of the
 slave), CVS accept that you make changes on several machines, and try
-afterwards to merge them. Assymetric tools are good only when you can
+afterwards to merge them. Asymmetric tools are good only when you can
 respect a strict discipline, when you switch from one machine to
 another. On the contrary, tools like CVS are more forgetful.
 
@@ -2717,7 +2717,7 @@ upgrade memory</item>
 
 </enum>
 
-Repairing a laptop can be quite expensive if you don't have a manufacturer's warranty. Sometimes professional support is bad. But opening a laptop case can be difficult. Often the procedures to upgrade the memory and the harddisk are described in the manual. For further details, you should try to get the maintainance/technical manual. Just be extremely careful and make notes as to where each screw goes. You must get most of them back in the right hole or you could ruin the machine by damaging the system board. Also after you get all the screws to an assembly out (some will be hidden) the parts are usually held together with plastic clips molded in, so you still must exercise care to separate them. Sometimes you need certain tools, for instance TORX screw drivers or a solder kit. Good luck.
+Repairing a laptop can be quite expensive if you don't have a manufacturer's warranty. Sometimes professional support is bad. But opening a laptop case can be difficult. Often the procedures to upgrade the memory and the harddisk are described in the manual. For further details, you should try to get the maintenance/technical manual. Just be extremely careful and make notes as to where each screw goes. You must get most of them back in the right hole or you could ruin the machine by damaging the system board. Also after you get all the screws to an assembly out (some will be hidden) the parts are usually held together with plastic clips molded in, so you still must exercise care to separate them. Sometimes you need certain tools, for instance TORX screw drivers or a solder kit. Good luck.
 
 WARNING: Usually laptop manufacturers declare the warranty to be void if the case was opened by people other than their own staff.
 
@@ -2752,7 +2752,7 @@ Though Microsoft's PowerPoint is often used for such things, there are also Linu
 <itemize>
 
 <item>
-<url url="http://www.tug.org/applications/pdftex/" name="pdftex"> creates PDF files from Tex files, which can be used toghether with certain LaTeX pakcages for presentations, see the example <it>screen designed users manual</it>.
+<url url="http://www.tug.org/applications/pdftex/" name="pdftex"> creates PDF files from Tex files, which can be used together with certain LaTeX packages for presentations, see the example <it>screen designed users manual</it>.
 
 <item>
 <url url="http://www.math.uakron.edu/~dpstory/webeq.html" name="The Web and Exerquiz Packages"> also a sophisticated method to create presentations with LaTex.
@@ -2967,7 +2967,7 @@ At <url url="http://o2ss.com/users/DrMartinus/" name="The Notebook/2 Site"> by D
 
 <sect1>NOVELL Netware
 <p>
-The client side with DOS/Windows9x style operating systems seems to be no problem, since there are many PCMCIA cards with drivers for Netware available. For Linux connections see the <tt>mars_nwe</tt> package. Also the Caldera Linux distribtion is well known for its Novell support.
+The client side with DOS/Windows9x style operating systems seems to be no problem, since there are many PCMCIA cards with drivers for Netware available. For Linux connections see the <tt>mars_nwe</tt> package. Also the Caldera Linux distribution is well known for its Novell support.
 <p>
 I hadn't time to build a Netware server on a laptop yet and couldn't check wether there are network connections possible (PCMCIA driver for Netware server).
 
@@ -3018,7 +3018,7 @@ v1.6 26 June 1999, rewrite of APM chapter, added install method via LapLink cabl
 <p>
 v1.7 28 September 1999, changed &lt;htmlurl ..&gt; SGML tags to &lt;url ..&gt;, ACPI chapter separated, touchpad chapter separated and improved, preface rewritten, added information about <tt>divine</tt>, <tt>noflushd</tt> and <tt>parted</tt>, new chapter Linux Tools to Repartition a Hard Disk, added appendix E about specific laptops, some URLs updated, minor changes
 <p>
-v2.0 2 October 1999, added information about <tt>gphoto</tt>, <tt>kmc_utils</tt>, Memory Technology Devices and HUT Mobile IP; changed structur of document (moved chapters Accessories, Laptop Distribution and chapter about partitioning), new DVD chapter, started Aviation chapter, started OS/2 chapter, started Blind and Visually Impaired Users chapter, changed entity &amp;tilde; in URLs to &tilde; to improve SGML-Tools PS output (otherwise &tilde; is missing), link to new Lucent WinModem driver, minor additions and changes
+v2.0 2 October 1999, added information about <tt>gphoto</tt>, <tt>kmc_utils</tt>, Memory Technology Devices and HUT Mobile IP; changed structure of document (moved chapters Accessories, Laptop Distribution and chapter about partitioning), new DVD chapter, started Aviation chapter, started OS/2 chapter, started Blind and Visually Impaired Users chapter, changed entity &amp;tilde; in URLs to &tilde; to improve SGML-Tools PS output (otherwise &tilde; is missing), link to new Lucent WinModem driver, minor additions and changes
 <p>
 v2.1 2 November 1999, added information about email with UUCP, the use of CVS and other tools to synchronize two machines, the <tt>noatime</tt> mount option, GPS systems, presentation tools, and hard disk form factors, started chapter about the Hurd, changed URL of PCMCIA-CS package and LDP, reworked credits chapter, reworked APM chapter, minor changes
 <p>
@@ -3373,7 +3373,7 @@ GUI: Avoid as much Graphical User Interface (GUI) as possible.
 <p>
 Use the tool <tt>hdparm</tt> to set up better harddisk performance. Though I have seen laptop disk enabled with <it>striping</it>, I can't see a reason to do so, because IMHO aka RAID0 striping needs at least two different disks to increase performance.
 <p>
-See UNIX and LINUX Computing Journal: <url url="http://www.diverge.org/ulcj/199910tfsp.shtml" name="Tunable Filesystem Parameters in /proc"> How to increase, decrease and reconfigure filsystem behavior from within /proc.
+See UNIX and LINUX Computing Journal: <url url="http://www.diverge.org/ulcj/199910tfsp.shtml" name="Tunable Filesystem Parameters in /proc"> How to increase, decrease and reconfigure filesystem behavior from within /proc.
 
 <sect1>Small Memory
 <p>
@@ -3397,7 +3397,7 @@ Kerneld-mini-HOWTO
 <p>
 Check the memory usage with <tt>free</tt> and <tt>top</tt>.
 
-<url url="http://www.complang.tuwien.ac.at/ulrich/mergemem/" name="Mergemem Project ">. Many programs contain <it>memory areas of the same content</it> that remain undetected by the operating system. Typically, these areas contain data that have been generated on startup and remain unchanged for longer periods. With <tt>mergemem</tt> such areas are detected and shared. The sharing is performed on the operating system level and is invisible to the user level programs. <tt>mergemem</tt> is particularily useful if you run many instances of interpreters and emulators (like Java or Prolog) that keep their code in private data areas. But also other programs can take advantage albeit to a lesser degree.
+<url url="http://www.complang.tuwien.ac.at/ulrich/mergemem/" name="Mergemem Project ">. Many programs contain <it>memory areas of the same content</it> that remain undetected by the operating system. Typically, these areas contain data that have been generated on startup and remain unchanged for longer periods. With <tt>mergemem</tt> such areas are detected and shared. The sharing is performed on the operating system level and is invisible to the user level programs. <tt>mergemem</tt> is particularly useful if you run many instances of interpreters and emulators (like Java or Prolog) that keep their code in private data areas. But also other programs can take advantage albeit to a lesser degree.
 
 You may also reduce the <it>kernel size</it> as much as possible by removing any feature which is not necessary for your needs and by modularizing the kernel as much as possible.
 
@@ -3555,7 +3555,7 @@ This chapter is a courtesy of Cedric Adjih <htmlurl url="mailto:cedric.adjih@inr
 <p>
 An apparently little known fact about the Neomagic chipset NM20xx is that you can run text mode in 100x37 (i.e. 800x600). This text mode is very nice (as opposed to the 80x25 which is ugly). I tried this with a HP OmniBook 800 and suppose it might work with other laptops using the NeoMagic chip, too. The following that I wrote was much longer than I expected so I wrote it as a kind of mini-howto :-) :
 
-The main problem is that is a bit difficult to set up, and if you're going wrong with SVGATextMode/restoretextmode some results on the LCD might be frightening. Although I didn't manage to break my LCD with many many attempts going wrong, DISCLAMER: THIS MIGHT DAMAGE YOUR HARDWARE. YOU HAVE BEEN WARNED. FOLLOW THE FOLLOWING INSTRUCTIONS AT YOUR OWN RISKS. I'M NOT RESPONSIBLE IF SOMETHING BAD HAPPENS.
+The main problem is that is a bit difficult to set up, and if you're going wrong with SVGATextMode/restoretextmode some results on the LCD might be frightening. Although I didn't manage to break my LCD with many many attempts going wrong, DISCLAIMER: THIS MIGHT DAMAGE YOUR HARDWARE. YOU HAVE BEEN WARNED. FOLLOW THE FOLLOWING INSTRUCTIONS AT YOUR OWN RISKS. I'M NOT RESPONSIBLE IF SOMETHING BAD HAPPENS.
 
 <sect2>Survey
 <p>
@@ -3648,7 +3648,7 @@ Publisher: QUE Corporation.
 
 Author: Marc Misani
 
-Title: The Complete Hardware Upgrade and Maintainance Guide
+Title: The Complete Hardware Upgrade and Maintenance Guide
 
 Publisher: unknown
 
