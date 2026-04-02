@@ -26,7 +26,7 @@ when using sed, we can't write straight back to this file so we need to
 use a temporary file in between.</para>
 
 <para><userinput>sed 's/root/0' login/Makefile &gt;
-tmp~:</userinput> This sed command replaces all occurences of
+tmp~:</userinput> This sed command replaces all occurrences of
 <filename>root</filename> in
 <filename>login/Makefile</filename> with 0.  This is
 because as we don't have glibc on the LFS system yet, usernames can't 

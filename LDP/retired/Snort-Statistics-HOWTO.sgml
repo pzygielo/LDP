@@ -45,7 +45,7 @@
 	    - added warning about automatic rule update
 	    - added hint to IDSPM
 	    - changed for rule files to /etc/snort to reflect snort.org's RPMS
-	    - as allways: clarified some parts
+	    - as always: clarified some parts
          </revremark>
       </revision>
 
@@ -333,7 +333,7 @@ source</ulink>.
    <title>Credits</title>
 
    <para>
-    Credits go to a variaty of people including
+    Credits go to a variety of people including
    </para>
 
    <para>
@@ -507,7 +507,7 @@ source</ulink>.
 
   <para>
    Snort is mainly a so called Network Intrusion Detection System (NIDS), it is
-   Open Source and available for a variaty of unices as well as Microsoft
+   Open Source and available for a variety of unices as well as Microsoft
    Windows (R).
   </para>
 
@@ -518,7 +518,7 @@ source</ulink>.
 
   <para>
    Since NIDS are mostly used in conjunction with firewalls it is vital to not
-   being vulnerable for attacks itself. Therefor all interfaces used with snort
+   being vulnerable for attacks itself. Therefore all interfaces used with snort
    bound to should be set up without ip addresses. Since this can not be achieved
    in every configuration, e.g. if you want to bind snort on an isdn interface
    ippp0, it should be considered to use a standalone computer for snort and set
@@ -738,7 +738,7 @@ url="http://www.linuxdoc.org/HOWTO/RPM-HOWTO.html">
 
     <para>
      The preprocessors <emphasis>minfrag</emphasis> and
-     <emphasis>stream</emphasis> are depricated in favor of
+     <emphasis>stream</emphasis> are deprecated in favor of
      <emphasis>stream4</emphasis>, and <emphasis>defrag</emphasis> is deprecated
      by <emphasis>frag2</emphasis>.
     </para>
@@ -1100,7 +1100,7 @@ url="http://www.linuxdoc.org/HOWTO/RPM-HOWTO.html">
        include /etc/snort/virus.rules
        include /etc/snort/local.rules
      
-       # vision.rules will be catched by arachnids_upd
+       # vision.rules will be caught by arachnids_upd
        include /etc/snort/vision.rules
      </programlisting>
     </para>
@@ -1188,7 +1188,7 @@ url="http://www.linuxdoc.org/HOWTO/RPM-HOWTO.html">
    <para>
     Some sanity checks are also included to see if the interface to listen on is
     already up and if there is an IP address defined. If there is an IP address
-    defined the correspondig config which on a RedHat linux box is found in
+    defined the corresponding config which on a RedHat linux box is found in
     <emphasis>/etc/sysconfig/network-scripts/ifcfg-&lt;interface
     name&gt;</emphasis> will be used, else the interface is set up as IP-less in
     promiscuous mode.
@@ -1439,12 +1439,12 @@ exit 0
 hostfile="/etc/snort/hosts"
 
 # recipientfile holds the addresses of all recipients in a single file,
-# seperated by newline
+# separated by newline
 recipientfile="/etc/snort/recipients"
 
 # if a recipient file exists
 if [ -s "$recipientfile" ] ; then
-  # generate the recipientlist with email adresses.
+  # generate the recipientlist with email addresses.
   for i in `cat $recipientfile` ; do
     recipients="$recipients "$i
   done
@@ -1649,7 +1649,7 @@ for i in `echo $snort_pid` ; do
 done
   
 # immediately restart snort after sending signal USR1
-# this may be ommitted when using CVS version of snort after about 01.11.2001
+# this may be omitted when using CVS version of snort after about 01.11.2001
 # or any version from 1.8.2 or higher
 /etc/rc.d/init.d/snortd restart
 
@@ -1779,7 +1779,7 @@ Sep 10 18:22:33 ids01 snort[1536]: &lt;lo&gt; Deep Throat access: 192.168.170.42
     </para>
 
     <para>
-     If you get similiar alerts it's ok, if not please take again a look on your
+     If you get similar alerts it's ok, if not please take again a look on your
      configuration until you get this far.
     </para>
 
@@ -2097,7 +2097,7 @@ $archive_user     = "snort";
 $archive_password = "xxxx";
 
 /* Type of DB connection to use
- *   1  : use a persistant connection (pconnect)
+ *   1  : use a persistent connection (pconnect)
  *   2  : use a normal connection (connect)
  */
 $db_connect_method = 1;
@@ -2239,7 +2239,7 @@ $external_whois_link = "http://www.samspade.org/t/ipwhois?a=";
     When first calling ACID via your browser you'll get a hint that you have to
     install ACID support in the chosen database. Click on
     <emphasis>Setup</emphasis> and ACID should create the required entries in
-    the database. If everything is set up correctly you'll get all informations
+    the database. If everything is set up correctly you'll get all information
     which are currently in the database, normally nothing at this time ;)
    </para>
 
@@ -2331,7 +2331,7 @@ drwxr-xr-x    8 root     root         4096 May 23 14:17 ..
    </para>
 
    <para>
-    My crontab enrty looks like this:
+    My crontab entry looks like this:
    </para>
 
    <para>
@@ -2602,7 +2602,7 @@ watchfor /snort: (\[\!\])* ERROR/
   </para>
 
   <para>
-   Also take a look at the initscripts, on a Sytem V based system like RedHat
+   Also take a look at the initscripts, on a System V based system like RedHat
    found in <emphasis>/etc/rc.d/init.d/*</emphasis>. If there are any services
    like <emphasis>nfs</emphasis> and <emphasis>portmap</emphasis> which you
    don't use on such a system delete the corresponding packages completely.
@@ -2750,8 +2750,8 @@ watchfor /snort: (\[\!\])* ERROR/
 
   <para>
    <comment>
-    This part needs tweeking. As questions and answers arrive I will put them in
-    here. Contributions are welcome. For this time always take a look on hte FAQ
+    This part needs tweaking. As questions and answers arrive I will put them in
+    here. Contributions are welcome. For this time always take a look on the FAQ
     section on <ulink url="http://www.snort.org/">http://www.snort.org/</ulink>.
    </comment>
   </para>

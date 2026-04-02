@@ -770,8 +770,8 @@ suggest getting a paid version.</para></listitem>
 using the Linux system it is always better to create another normal user with
 restricted rights. This is because the root user is an all-powerful person and
 the chances of him/her damaging a critical file or doing anything similar
-accidentally is very high (believe me, guys!!). Any mischievious program like a virus or 
-trojan horse would not have any access to files that you do not, which ensures that the effect of the program would be minimal if any. Morever a cracker who manages to access 
+accidentally is very high (believe me, guys!!). Any mischievous program like a virus or 
+trojan horse would not have any access to files that you do not, which ensures that the effect of the program would be minimal if any. Moreover a cracker who manages to access 
 your system through a network or the Internet would not be able to play with critical 
 files. Unless you are installing software or doing anything else that requires you to 
 be a root user don't do it. Even then its better to use the su(super user) command 
@@ -785,7 +785,7 @@ file systems (usually ext2/ext3) have been designed to reduce fragmentation.
 That means that you don't need to worry about the files getting fragmented in
 your Linux system. There are defragmentation utilities for Linux but they are not
 meant for casual usage unlike Disk defragmenter. Just like newer versions of
-Windows, which forces scandisk to run everytime the system is not
+Windows, which forces scandisk to run every time the system is not
 shutdown properly, Linux uses a program called fsck (file system check) which you 
 may or may not have the option to cancel during system startup (that depends on
 your Linux distribution). RedHat version 7.2 and above ask your

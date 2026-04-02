@@ -9,7 +9,7 @@ TCP/IP and application level protocols, such as HTTP, LDAP, SMTP etc... It is
 based on public key cryptography systems (various ciphers can be used) and on
 X.509 certificates.</PARA> 
 
-<PARA>SSL was initially a Netscape protocol, then it has gone trough a
+<PARA>SSL was initially a Netscape protocol, then it has gone through a
 standardization process and now is called TLS (Transmission Layer Security).
 It is commonly referred as SSL/TLS.</PARA>
 

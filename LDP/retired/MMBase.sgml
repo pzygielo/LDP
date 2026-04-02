@@ -130,8 +130,8 @@ After that you can just type
   apt-get install j2sdk1.3  
 </verb></tscreen><p>
 
-Note: Although it must be possible to have more JRE's installed next to eachother, I wouldn't recommend
-it if it's not absolutely neccesary.
+Note: Although it must be possible to have more JRE's installed next to each other, I wouldn't recommend
+it if it's not absolutely necessary.
 
 <sect>Getting MMBase and setting up some things<p>
 <sect1>Getting MMBase<p>
@@ -207,7 +207,7 @@ Using the newest version of Tomcat and Apache, I have troubles getting the
 two working together. As soon as I find out how to use libapache-mod-webapp
 or libapache-mod-jk with tomcat4, I will update this HOWTO.<p>
 
-One posible solution is compiling mod-webapp yourself, because the version
+One possible solution is compiling mod-webapp yourself, because the version
 that comes with Debian seems to be non-standard. This is beyond the scope and intention of this
 HOWTO.<p>
 

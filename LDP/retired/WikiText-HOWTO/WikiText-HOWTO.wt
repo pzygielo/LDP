@@ -136,7 +136,7 @@ Use the square brackets to identify links, like this:
 
 In this case, the text after the pipe character isn't an id, but the "title" of the link.
 
-There are two special namespaces that you can use besides the standard "http:" and "mailto:" namespaces that you are probably famliar with. The first is the "ldp:" namespace. Look at the following link:
+There are two special namespaces that you can use besides the standard "http:" and "mailto:" namespaces that you are probably familiar with. The first is the "ldp:" namespace. Look at the following link:
 
 <programlisting>
 [[ldp:Distributions-HOWTO]]

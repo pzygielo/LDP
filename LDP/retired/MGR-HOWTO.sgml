@@ -584,7 +584,7 @@ and the netPBM filters, but I have not taken the time to do it.
 <item>    Yossi Gil for many fonts.
 <item>    Carsten Emde, carsten@thlmak.pr.net.ch, for mphoon.
 <item>    Vincent Broman for middle mouse-button emulation, linting, Sun cgsix
-    support, VGA colormap acess, integration of the sunport code
+    support, VGA colormap access, integration of the sunport code
     into Haardt's layering scheme, font gathering, the screen saver,
     and continued maintenance.
 <item>    Kenneth Almquist, ka@socrates.hr.att.com, for helpful bug reports.

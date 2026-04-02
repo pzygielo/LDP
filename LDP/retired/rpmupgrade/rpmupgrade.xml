@@ -1037,11 +1037,11 @@ CRITICISMS UNTIL I'M FINISHED WRITING IT.</remark>
     is partitioned. If Linux is all that you are running and you
     have the space to make the partitions for a new Linux then that
     will probably be the safest and easiest way to upgrade. If you
-    are dual booting, with seperate operating systems on seperate
+    are dual booting, with separate operating systems on separate
     partitions, then you might want to use the other OS's spare
     space for tempoary back up while upgrading. Back up any data
     which you are worried might be damaged during the upgrade.
-    Upgrade by overwriting the existing Linux sytem.</para>
+    Upgrade by overwriting the existing Linux system.</para>
 
     <tip>
       <para>There is a detailed HOWTO ( 
@@ -1471,7 +1471,7 @@ CRITICISMS UNTIL I'M FINISHED WRITING IT.</remark>
     RAM which isn't currently being accessed, in order to free up
     more RAM. There was a rule of thumb saying to make this twice
     the size of your RAM. But the best way is to base this size on
-    your current sytem. Find out how much RAM you're using with the
+    your current system. Find out how much RAM you're using with the
     
     <application moreinfo="none">kpm</application>
 
@@ -1480,7 +1480,7 @@ CRITICISMS UNTIL I'M FINISHED WRITING IT.</remark>
 
     program. Each will give you a number that varies depending on
     how many programs you're running. So run the programs that you
-    normally use to get an idea of the normal amout of swap space
+    normally use to get an idea of the normal amount of swap space
     you use. Then size the partition a little bigger.</para>
 
     <sidebar>
@@ -1656,11 +1656,11 @@ word there is Most.
     <title id="twowrapup">Wrap up ideas</title>
 
     <para>In conclusion, there are many possible ways of
-    re-arranging your data amung various partitions. The advantage
+    re-arranging your data among various partitions. The advantage
     that a backup partition gives is to keep an undisturbed copy of
     the data while doing a complete install. Or you can install a
     whole new Linux on a spare partition to keep your old Linux
-    undisturbed while configuring your new sytem. This are just a
+    undisturbed while configuring your new system. This are just a
     couple of possible schemes. This section gave you an idea of
     how much space is needed for Linux in the various directories.
     But gathering space requirements from your existing system
@@ -1855,7 +1855,7 @@ word there is Most.
       may create different directories or different file names. By
       creating new names for the new files, the older kernel files
       are preserved and can be booted if for any reason the new
-      ones don't work. It's a common practice to keep two verions
+      ones don't work. It's a common practice to keep two versions
       of the kernel installed so that if one has problems booting
       you have another as a backup.</para>
     </note>
@@ -1865,7 +1865,7 @@ word there is Most.
 
     ) 
 <!-- FIXME : extra white space -->
-    the binary kernel package and dependancies all at once. To be
+    the binary kernel package and dependencies all at once. To be
     safe you should make backup copies of the kernel image under 
     <filename moreinfo="none">/boot/vmlinuz</filename>
 

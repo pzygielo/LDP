@@ -235,7 +235,7 @@ hard on these projects.  Just think, if all of these people had worked together
 on one project, maybe we would have a free browser that would rival Netscape
 and Internet Explorer.
 
-In my opinion out of all of the broswers, Netscape and Lynx are the best. 
+In my opinion out of all of the browsers, Netscape and Lynx are the best. 
 The runners up would be Kfm, Emacs-W3 and Mosaic.  
 
 
@@ -720,7 +720,7 @@ Apache or send it the SIGHUP signal with <tt/kill/ for the changes to take
 effect.  Make sure you send the signal to the parent process and not any of
 the child processes.  The parent usually has the lowest process id number.  The
 process id of the parent is also in the <tt/httpd.pid/ file in the log
-directory.  If you accidently send it to one of the child processes the
+directory.  If you accidentally send it to one of the child processes the
 child will die and the parent will restart it.
 
 I will not be walking you through the steps of configuring Apache.  Instead
@@ -963,7 +963,7 @@ not currently using the inet daemon, you may want to comment out the rest of
 the lines in the file so you don't activate other services as well (FTP,
 finger, telnet, and many other things are usually run from this daemon).
 
-If you are already running the inet deamon (<tt/inetd/), then you only need to
+If you are already running the inet daemon (<tt/inetd/), then you only need to
 send it the SIGHUP signal (via kill; see kill's man page for more info) or
 reboot the computer for changes to take effect.  If you are not running
 <tt>inetd</tt> then you can start it manually.  You should also add it to your
@@ -1057,7 +1057,7 @@ Finally restart Apache, it should display a message on the console that
 su-exec is being used.
 
 CGI scripts should be set world executable like normal.  They will
-automaticaly be run as the owner of the CGI script.  If you set the SUID (set user id) bit on the
+automatically be run as the owner of the CGI script.  If you set the SUID (set user id) bit on the
 CGI scripts they will not run.  If the directory or file is world or group
 writable the script will not run.  Scripts owned by system users will not be
 run (root, bin, etc.).  For other security conditions that must
@@ -1165,7 +1165,7 @@ For module programming information goto
 <p>
 Sorry this section has not been written yet.
 
-Coming soon: mSQL, PHP/FI, cgiwrap, Fast-cgi, MS frontpage extentions,
+Coming soon: mSQL, PHP/FI, cgiwrap, Fast-cgi, MS frontpage extensions,
 and more.
 
 

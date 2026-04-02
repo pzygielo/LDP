@@ -81,11 +81,11 @@ DEFAULT        	Auth-Type := LDAP
 [...omissis]
 </PROGRAMLISTING></PARA> 
 
-<PARA>If you alreay set up an LDAP server for Un*x accounts management, this
+<PARA>If you already set up an LDAP server for Un*x accounts management, this
 is enough.</PARA>
 
 <PARA>On the LDAP server ensure also that the radius server can read the all
-the posixAccount attributes (expecially <FILENAME>uid</FILENAME> and
+the posixAccount attributes (especially <FILENAME>uid</FILENAME> and
 <FILENAME>userpassword</FILENAME>).</PARA>  </SECT2>
 
 <SECT2><TITLE>Testing Radius Authentication</TITLE>
@@ -97,7 +97,7 @@ mode:</PARA>
 /usr/local/sbin/radiusd  -X -A
 </PROGRAMLISTING></PARA> 
 
-<PARA>Then use the <FILENAME>radtest</FILENAME> program whith a syntax like</PARA>
+<PARA>Then use the <FILENAME>radtest</FILENAME> program with a syntax like</PARA>
 
 <PARA><PROGRAMLISTING FORMAT="LINESPECIFIC">
 radtest username "password" radius.yourorg.com 1 testing123 

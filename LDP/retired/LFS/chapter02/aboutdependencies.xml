@@ -33,7 +33,7 @@ an installation dependency. Without <command>rm</command>, the script
 wouldn't be able to run properly.</para>
 
 <para>Unfortunately, this method is not foolproof. Configure scripts check
-for the presense of many programs, but not all of them are considered real
+for the presence of many programs, but not all of them are considered real
 dependencies. For instance, configure scripts may check for the presence of
 the <command>autoconf</command> program. It will be listed in the strace
 output, but it's not a real installation dependency. A package will in most

@@ -63,7 +63,7 @@ This document describes how to build a Linux system that runs
  is extremely scalable, using btrees extensively to support large
  sparse files, and extremely large directories. The journalling capability
  means no more waiting for fsck's or worrying about meta-data corruption.&quot;
- Essentialy XFS is the filesystem SGI designed for its highend server
+ Essentially XFS is the filesystem SGI designed for its highend server
  systems, hence the subtitle of this document, &quot;Linux on Steroids&quot;.
  :-)   
   </para>
@@ -93,7 +93,7 @@ The information contained in this document is based on messages
   </para>
   <para>
 Please feel free to email me at <email>ringram@gargoylecc.com</email> if you
- have any corrections or if any imformation/URLs/etc. is missing.
+ have any corrections or if any information/URLs/etc. is missing.
  The more feedback I get on this HOWTO the more helpful it will be
  for all.   
   </para>
@@ -210,7 +210,7 @@ $ cvs login  (the password is &quot;cvs&quot;)
   </programlisting>
   </para>
   <para>
-This needs to be done only ONCE, not everytime you access CVS.
+This needs to be done only ONCE, not every time you access CVS.
  
   </para>
   <para>
@@ -242,7 +242,7 @@ The option to build XFS support for the Linux kernel as modules
  is available and will work (or so I am told) with the help of an
  initial RAM disk and a couple of additions to the lilo configuration.
  I have not tried this (yet), so I will not include documentation
- on how this is done other than just to qoute from a message to the
+ on how this is done other than just to quote from a message to the
  development mailing list from Russell Cattelan:   
   </para>
   <blockquote>
@@ -577,7 +577,7 @@ The last of the process is fairly simple and essentially the
  as was done for /.  I recommend that you do the rest of this process
  with the system in single user mode so you can unmount everything
  other than / and do all of the swapping without having to reboot
- a million times.  You can boot to single user mode by either issueing
+ a million times.  You can boot to single user mode by either issuing
  a runlevel change command to the init process like so:   
   </para>
   <para>

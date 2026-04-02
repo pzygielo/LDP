@@ -201,7 +201,7 @@ $ make
 </sect2>
 
 <sect2 id="therest">
-<title>Compling the rest</title>
+<title>Compiling the rest</title>
 <para>For each <ulink url="http://ftp.du.se/pub/mirrors/kde/stable/latest/src/">remaining package</ulink>, 
 the following configuration should work nicely.  Note that <command>kdeaddons</command>, if
 installed, should be installed <emphasis>last</emphasis> due to package dependencies.</para>
@@ -276,7 +276,7 @@ and/or dropping the optimization down to an <command>-O2</command> (when in doub
 <para>You can perform additional tuning (to increase speed) by compiling in AGP and <ulink url="http://dri.sourceforge.net">DRI</ulink> support in your Linux kernel and your XF86Config
 file.  Recompiling <ulink url="http://www.xfree86.org">XFree86</ulink> from scratch doesn't usually provide an increase in speed, although you should be running XFree86 4.3.0 if
 you're going to all this trouble anyways.  As this article is specific to KDE, these steps are not covered here and
-are left as an exercise to the reader.  (Hint: If you think you've got DRI installed, try running `glxinfo | grep render` to verify -- you might be suprised!)</para>
+are left as an exercise to the reader.  (Hint: If you think you've got DRI installed, try running `glxinfo | grep render` to verify -- you might be surprised!)</para>
 
 <para>If you use <command>-no-xinerama</command> in one package, make sure to use it in all packages (and vice-versa) to
 prevent speed delays.</para>

@@ -58,7 +58,7 @@
     <section id='python.lang'>
         <title>Python Language</title>
         <para>
-            Python language is splitted into several packages, which are listed below.
+            Python language is split into several packages, which are listed below.
         </para>
         <para>
             Package with Python library contains some basic modules. The modules are required

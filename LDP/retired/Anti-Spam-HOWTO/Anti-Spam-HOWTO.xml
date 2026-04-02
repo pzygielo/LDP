@@ -216,7 +216,7 @@
  <para>
 	 Since this document is aimed at a wide audience, we make the following recommendations
 	 on reading paths depending on your experience with linux and open source software,
-	 as well as your needs or responibilities for controlling spam.
+	 as well as your needs or responsibilities for controlling spam.
  </para>
  <itemizedlist mark='bullet'>
  <listitem>
@@ -240,7 +240,7 @@
 		 If you are a reasonably expreienced linux user familiar with 
 		 installing and configuring open source software, and want to
 		 set up a local anti-spam solution, you can start at
-		 <link linkend = "lfiltering">Local Filtering</link>, which deals with technolgies
+		 <link linkend = "lfiltering">Local Filtering</link>, which deals with technologies
 		 for filtering your mail locally.
 	 </para>
  </listitem>
@@ -266,7 +266,7 @@
  <listitem>
 	 <para>
 		 If you think that spam is a larger problem better dealt with at the level of network
-		 protocols, or are interested in this prespective, then you might be intested to 
+		 protocols, or are interested in this perspective, then you might be intested to 
 		 start reading at the section entitiled 
 		 <link linkend = "protocols">Network Protocols</link>, which talks about
 		 some current research into dealing with spam at the level of network protocols.

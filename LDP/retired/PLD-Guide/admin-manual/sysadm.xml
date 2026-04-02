@@ -35,7 +35,7 @@ vim-ispell-6.1.063-1
     <command>rpm -U &lt;package name&gt; </command>
     <note>
     <para>
-    Upgrading package which conatins your kernel is usually very bad
+    Upgrading package which contains your kernel is usually very bad
     idea. Upgrade consist of removing the old package and installing the
     new one. With kernel it is usually safe to install the new one test
     and than id everything works fine remove the old one.
@@ -327,7 +327,7 @@ source=Primary PLD ftp server,ftp,ftp.pld-linux.org,/PLD-1.0/i586/PLD/,RPMS,inst
 	</para>
 	<note>
 	  <para>
-	    rc-boot support works only if rc-boot is installed (thats obvious),
+	    rc-boot support works only if rc-boot is installed (that's obvious),
 	    but it must also be enabled. This is done in it's main config file.
 	    For details refer to 
 	    <citerefentry>

@@ -155,7 +155,7 @@ This document would not have been possible without all the
 information contributed by other people - those involved
 in the Linux &Glide; port and the beta testing process, in
 the development of &Mesa; and the &VooMesa; drivers, or
-rewieving the document on behalf of &c3Dfx; and Quantum3D.
+reviewing the document on behalf of &c3Dfx; and Quantum3D.
 Some of them contributed entire sections to this document.
 <p>
 Daryll Strauss
@@ -293,7 +293,7 @@ to provide assistance during the review/copy editing process.
       (kertis@frozenwave.com) confirmed. Added TMU
       alias to Texelfx entry. FAQ on support for
       multi TMU in current release. Added mention
-      of seperate VR/VG distributions to current
+      of separate VR/VG distributions to current
       version FAQ. No mention of any upcoming Glide
       revisions. Added Mesa/Glide combo portability,
       and Charlie Wallace' DOS port. Moved X vs. AT3D
@@ -550,7 +550,7 @@ To check the installation and the memory mapping, do
       Prefetchable 32 bit memory at 0xfb000000.
 </code>
 for a Diamond Monster 3D used with a Diamond Stealth-64. Additionally
-a <tt>cat /proc/cpuinfo /proc/meminfo</tt> might be helpfull for
+a <tt>cat /proc/cpuinfo /proc/meminfo</tt> might be helpful for
 tracking down conflicts and/or submitting a bug report.
 <p>
 With current kernels, you will probably get a boot warning
@@ -690,7 +690,7 @@ available at compile time, if you want to compile your own
 graphics applications. If you do not want to use the
 installation as above (i.e. you insist on a different
 location), make sure that any application could access
-the shared libary at runtime, or you will get a response
+the shared library at runtime, or you will get a response
 like
 <tt>can't load library 'libglide.so'</tt>.
 
@@ -843,7 +843,7 @@ Currently, an add-on solution is recommended, as it allows
 you to choose a regular graphics board well supported for
 Linux. There are other aspects discussed below.
 <p>
-All Quantum3D Obsidian boards, independend of texture
+All Quantum3D Obsidian boards, independent of texture
 memory, frame buffer memory, number of Pixelfx and
 Texelfx units, and SLI should work. Same for all other
  &VooDoo; based boards, like  Orchid Righteous 3D, Canopus
@@ -879,7 +879,7 @@ Quantum 3D offers the widest selection of &c3Dfx;-based
 boards, and is probably the place to go if you are
 looking for a high end &VooDoo; based board configuration.
 Quantum 3D is addressing the visual simulation market,
-while most of the other vendors are only targetting the
+while most of the other vendors are only targeting the
 consumer-level PC-game market.
 
 
@@ -944,7 +944,7 @@ is currently not supported with Linux.
 <p>
 The &VooD2; is the successor of the &VooDoo; chipset,
 featuring several improvements. It is announced
-for late March 1998, and annoucements of &VooD2;
+for late March 1998, and announcements of &VooD2;
 based boards have been published e.g. by Quantum 3D,
 by Creative Labs, Orchid Technologies, and
 Diamond Multimedia.
@@ -1049,7 +1049,7 @@ the amount of texture memory effectively stays the same.
 <sect1>Is there a single board SLI setup?
 <p>
 There are now two types of Quantum3D SLI boards.
-The intial setup used two boards, two PCI slots,
+The initial setup used two boards, two PCI slots,
 and an interconnect (e.g. the Obsidian 100-4440).
 The later revision which performs identically is
 contained on one full-length PCI board (e.g.
@@ -1062,7 +1062,7 @@ solution is possible, and has been done.
 The most essential difference between different boards
 using the &VooDoo; chipset is the amount and
 organization of memory. Quantum3D used a three digit
-scheme to descibe boards. Here is a slightly modifed
+scheme to describe boards. Here is a slightly modified
 one (anticipating &VooD2;). Note that if you use
 more than one Texelfx, they need the same amount of
 texture cache memory each, and if you combine two
@@ -1126,7 +1126,7 @@ able to do 1024x768 tripled buffered with Z, but you
 will not be able to do e.g. 1280x960 with double
 buffering.
 <p>
-Note that triple buffering (no VSync synchonization 
+Note that triple buffering (no VSync synchronization 
 required by the application), stereo buffering (for
 interfacing LCD shutters) and other more demanding
 setups will severely decrease the available resolution.
@@ -1198,7 +1198,7 @@ and
  url="http://www.quantum3d.com/"
  name="www.quantum3d.com">.
 <p>
-Inofficial sites that have good info
+Unofficial sites that have good info
 are "Voodoo Extreme" at
 <htmlurl
  url="http://www.ve3d.com/"
@@ -1225,7 +1225,7 @@ has been ported to Linux by Daryll Strauss.
 <p>
 In the distribution is a <tt>libtexus.so</tt>, which
 is the &c3Dfx; Interactive Texture Utility Software.
-It is an image processing libary and utility program
+It is an image processing library and utility program
 for preparing images for use with the &c3Dfx;
 Interactive &Glide; library. Features of &TexUs; include
 file format conversion, MIPmap creation, and support for
@@ -1350,7 +1350,7 @@ to use the other newsgroups.
 <sect1>Who is maintaining it?
 <p>
 &c3Dfx; will appoint an official maintainer soon.
-Currently, inofficial maintainer of the Linux
+Currently, unofficial maintainer of the Linux
 &Glide; port is Daryll Strauss. Please post
 bug reports in the newsgroup (above). If you
 are confident that you found a bug not previously
@@ -1515,7 +1515,7 @@ they target the same hardware rendering pipeline.
 Some of the &c3Dfx; demo programs for &Glide; depend
 not only on &Glide; but also on &c3Dfx;'s proprietary Arcade
 Toolbox (ATB), which is available for DOS and Win32,
-but has not been ported for Linux. If you are a devleoper,
+but has not been ported for Linux. If you are a developer,
 the sources are available within the Total Immersion
 program, so porting ATB to Linux would be possible.
 <p>
@@ -1643,7 +1643,7 @@ SuSe, which includes a GLX, see
 Currently, &Mesa; still uses its GLX emulation with Linux.
 
 
-<sect1>&Glide; and commerical X Servers?
+<sect1>&Glide; and commercial X Servers?
 <p>
 I have not received any mail regarding use
 of &Glide; and/or Mesa with commercial X Servers.
@@ -1799,12 +1799,12 @@ preparation.
 <p>
 It is available for Linux and Win32, and any application
 based on Mesa will only have the usual system specific
-code, which should usually mean XWindows vs. Windows,
+code, which should usually mean X-Windows vs. Windows,
 or GLX vs. WGL. If you use e.g. GLUT or Qt, you should
 get away with any system specifics at all for virtually
 most
 applications. There are only a few issues (like sampling
-relative mouse movement) that are not adressed by the
+relative mouse movement) that are not addressed by the
 available portable GUI toolkits.
 <p>
 &Mesa;/&Glide; is also available for DOS. The port
@@ -1969,7 +1969,7 @@ Quake-specific subset of OpenGL (see
 <htmlurl
 url="http://www.cs.unc.edu/~martin/3dfx.html"
 name="http://www.cs.unc.edu/~martin/3dfx.html"> for
-an inofficial list of supported code paths). It is
+an unofficial list of supported code paths). It is
 not supported, and not updated anymore.
 It was a Win32 DLL (<tt>opengl32.dll</tt>) released
 by &c3Dfx; and was available for Windows only. This
@@ -2049,7 +2049,7 @@ obviously.
 <p>
 Problems such as root requirements for games has been sort
 of a sore spot in Linux for a number of years now. This is
-one of the goals that e.g. GGI is targetting to fix. 
+one of the goals that e.g. GGI is targeting to fix. 
 A <tt>ref_ggi</tt> might be supported in the near future.
 
 <sect1>Does LinuxQuake use multitexturing?
@@ -2100,7 +2100,7 @@ with upcoming releases of Linux, Xfree86, Linux &Glide;
 and/or Mesa, please contact me, and I will happily forward
 your request to the persons maintaining the drivers in
 question. If you are interested in support for Linux &Glide;
-on other then the PC platfrom, e.g. DEC Alpha, please
+on other then the PC platform, e.g. DEC Alpha, please
 contact the maintainer of Linux &Glide; Daryll Strauss, at
 <htmlurl
  url="mailto:daryll@harlot.rb.ca.us"
@@ -2240,7 +2240,7 @@ and/or set your <tt>LD_LIBRARY_PATH</tt> properly.
 &Mesa; supports several drivers in parallel (you could
 use X11 SHM, off screen rendering, and &VooMesa; at
 the same time), and you might have to create and
-switch contexts explicitely (see <tt>MakeCurrent</tt>
+switch contexts explicitly (see <tt>MakeCurrent</tt>
 function) if the &VooDoo; isn't chosen by default.
 
 

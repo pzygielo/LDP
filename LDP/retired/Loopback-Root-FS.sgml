@@ -222,7 +222,7 @@ The kernel options that you will need to enable are the following:
 
 The first two are for the RAM disk device itself and the initial ram disk
 device.  The next one is the loop back filesystem option.  The last two are the
-msdos filesystem support which is required to mount the DOS partitition.
+msdos filesystem support which is required to mount the DOS partition.
 
 <p>
 Compiling a kernel without modules is the easiest option, although if you do
@@ -503,7 +503,7 @@ Create a directory called <tt>/initrd</tt>, this is where the initial ramdisk
 will be mounted once the loopback root filesystem is mounted.
 <p>
 Create a symbolic link called <tt>/DOS</tt> that points to <tt>/initrd/mnt</tt>
-where the real DOS parition will be mounted.
+where the real DOS partition will be mounted.
 <p>
 Add a line into the rc file that mounts the disks.  This should run the command
 <tt>mount -f -t msdos /dev/hda1 /initrd/mnt</tt>, this will create a 'fake'
@@ -523,7 +523,7 @@ include them on this device as normal.
 <p>
 The root device that you will be using is the file <tt>linuxswap.img</tt>.  The
 swap device is very simple to create.  Create an empty file as was done for the
-initial ramdisk and then run <tt>mkswap linuxswap.img</tt> to intialise it.
+initial ramdisk and then run <tt>mkswap linuxswap.img</tt> to initialise it.
 
 <p>
 The size of the swap space will depend on what you plan to do with the installed

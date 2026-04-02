@@ -2915,7 +2915,7 @@ Total disksize 19541 MB.
 
         <para>The GNU/Linux Kernel originally used the <quote>First
         Extended filesystem</quote>, commonly denoted as ext or
-        extfs. It has now been superceded by ext2 and ext3
+        extfs. It has now been superseded by ext2 and ext3
         filesystems. Kernel 2.4, currently uses Linux's native
         <quote>Third Extended filesystem,</quote> commonly denoted as
         <quote>ext3</quote> or <quote>ext3fs</quote>. Though Kernels

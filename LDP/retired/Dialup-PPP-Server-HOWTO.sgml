@@ -71,7 +71,7 @@ Red Hat is pretty good at finding internal modems as long as they are not the "w
 stat /dev/modem
 </programlisting>
 <para>
-You will get a bunch of information regarding the link, but the first line will look somthing like this:
+You will get a bunch of information regarding the link, but the first line will look something like this:
 </para>
 <programlisting>
 File: "/dev/modem" -> "/dev/ttyS1"
@@ -107,10 +107,10 @@ You should not need to change anything since we will put all our connection sett
 <sect2 id="pap">
 	<title>pap-secrets</title>
 <para>
-Update /etc/ppp/pap-secrets.  Type in "*" for client, "*" for server, " "" " for secret and "*" for IP address (omit the quotes except for secret which only gets one set of double quotes).  This configuation will enable every registered user on the dialup server computer remote access to log in.  You could also specify usernames, passwords and IP address for PAP authentication.  When finished, the file should look like this:
+Update /etc/ppp/pap-secrets.  Type in "*" for client, "*" for server, " "" " for secret and "*" for IP address (omit the quotes except for secret which only gets one set of double quotes).  This configuration will enable every registered user on the dialup server computer remote access to log in.  You could also specify usernames, passwords and IP address for PAP authentication.  When finished, the file should look like this:
 </para>
 <programlisting>
-client     server     secret     IP addresss
+client     server     secret     IP address
 *          *          ""         *
 </programlisting>
 </sect2>

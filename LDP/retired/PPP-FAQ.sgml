@@ -313,7 +313,7 @@ talk to the Linux PPP code.
 <p>
 This does not mean that the Linux PPP package is obsolete. It is only
 that at the time that the package was written the current RFC was
-1331. Any changes in subsequent RFC documents has been incorportated
+1331. Any changes in subsequent RFC documents has been incorporated
 within the pppd package and it is &grave;current&grave; by today&grave;s standards.
 <p>
 A complete list is in the faq for comp.protocols.ppp.
@@ -1190,7 +1190,7 @@ controllers. This is no longer the case when we consider that
 some systems routinely have 128 network devices.
 <p>
 The 2.2 package has raised the limit to 5000 network devices. That
-limit is excessive. However, it means that in all practial purposes,
+limit is excessive. However, it means that in all practical purposes,
 there is no limit. It is a compile-time define in the sys-linux.c
 module.
 
@@ -1330,7 +1330,7 @@ You will be responsible for deleting the route when the link goes down.
 
 <sect1>How do I connect to a Windows NT server?
 <p>
-This question is becomming one of the most frequently asked questions
+This question is becoming one of the most frequently asked questions
 about PPP. The Microsoft Windows NT platform is making substantial
 inroads into the corporate and commerial service organizations and the
 use of it's RAS services is seen as one of the reasons. It is just so
@@ -1381,7 +1381,7 @@ entry which corresponds to:
 account        remote            password
 </verb></tscreen>
 <p>
-This is three words, seperated by one or more spaces, on the same
+This is three words, separated by one or more spaces, on the same
 line. I have left out the IP addresses as they are used more for the
 &grave;dial-in server&grave; side of the pppd process. There is no limit
 to the line length. If your password or account name has spaces in it

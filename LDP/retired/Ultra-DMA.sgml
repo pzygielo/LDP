@@ -186,7 +186,7 @@ Here's a brief overview of IDE-based drive technologies:
   Note that cable length should be kept shorter for UDMA, compared to plain DMA,
   preferably less than 30 cm (12&quot;) maximum length though 18 inches will
   usually be fine. 66 MB/s requires a special 80-conductor cable and should
-  definately not be longer. If you get a lot of CRC errors, try using a shorter
+  definitely not be longer. If you get a lot of CRC errors, try using a shorter
   cable.
   
 
@@ -201,7 +201,7 @@ Here's a brief overview of IDE-based drive technologies:
 Burst (instantaneous) transfer rates are supposed to go from 16.6MB/s (PIO
 mode 4) to 16.6MB/s (DMA mode 2) up to 33MB/s (UDMA). In his patch against
 kernel 2.1.55, Kim-Hoe Pang actually checked the UDMA burst transfer rate
-with a logic analiser: 60ns/word, which translates into 33MB/s.
+with a logic analyser: 60ns/word, which translates into 33MB/s.
 
 Note that burst transfer rates only affect data transfers to/from the EIDE
 drive cache (476kB for the IBM 6.4GB drive), and IMHO are not particularly
@@ -476,7 +476,7 @@ and pass "ide2=a,b+2 ide3=c,d+2" as a command line parameter to the kernel.
   66 MB/sec transfer speed. Unfortunately it is not yet supported by 2.2.x
   kernels.
   
-  There is a patch for 2.0.x and 2.2.x kernels availabe at
+  There is a patch for 2.0.x and 2.2.x kernels available at
   <htmlurl url="http://www.kernel.org/pub/linux/kernel/people/hedrick"
   name="http://www.kernel.org/pub/linux/kernel/people/hedrick">, and support is
   included in the 2.3.x development kernel series at least as of 2.3.3.
@@ -539,7 +539,7 @@ and above.
 
   This interface also can be autodetected and used in EIDE mode by an unpatched
   kernel, but if you have one of these, you will want to grab a patch so you
-  can get faster throughput and do away with annoying "unkown PCI device"
+  can get faster throughput and do away with annoying "unknown PCI device"
   messages.
   
   One is available at
@@ -603,7 +603,7 @@ and above.
 <itemize>
 <item>All Intel chipsets: FX, HX, VX, TX, LX
 <item>All SiS chipsets (only SiS5598 tested, but this entire family of
-  chipsets has the same bult-in 5513 interface device).
+  chipsets has the same built-in 5513 interface device).
 <item>VIA chipsets (only 82C586B tested, but again this family of
   chipsets has the same interface structure). Special diagnostics
   support is available for the VIA interfaces.
@@ -617,7 +617,7 @@ and above.
 Here are a few notes from Andre Balsa, the author of an earlier patch:
 
 <tscreen><verb>
-Performance with IBM UDMA drives on a good motherboard approches the
+Performance with IBM UDMA drives on a good motherboard approaches the
 maximum head transfer rates: about 10 Mb/s (measured with hdparm -t -T).
 
 The Intel TX chipset has a single FIFO for hard disk data shared by

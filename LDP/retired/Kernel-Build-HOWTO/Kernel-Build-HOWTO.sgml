@@ -330,7 +330,7 @@ bogomips        : 3047.42
 		</para>
 		<para>
 		To recap, you can build either from your distribution's modified kernel sources
-		or from the stable or unstable branch of the offical sources. If you are making
+		or from the stable or unstable branch of the official sources. If you are making
 		minor modifications to the configuration it is perhaps safest to install your
 		distributor's version. These kernels usually include stability and feature 
 		patches that may be missing from the stock kernels. For example, some distributors
@@ -457,7 +457,7 @@ Primary key fingerprint: C75D C40A 11D7 AF88 9981  ED5B C86B A06A 517D 0F0E
 </screen>
 
 		If your Linux sources are in BZIP compressed format (that is, end with a 
-		<filename>.bz2</filename> extenstion, then use the following command:
+		<filename>.bz2</filename> extension, then use the following command:
 <screen>
 <prompt>$ </prompt><command>tar xfvj /path/to/linux-2.6.0-test7.tar.bz2</command>
 </screen>
@@ -540,7 +540,7 @@ patching file Makefile
 	<section id="configuration-intro">
 		<title>The Configuration Process</title>
 		<para>
-			The configuration process is the most strenous portion of the kernel
+			The configuration process is the most strenuous portion of the kernel
 			rebuild process. In this step you are deciding which features will be 
 			included in the final kernel and it can require lots of hardware
 			knowledge. In truth, it is not too onerous. The current kernels have
@@ -2121,7 +2121,7 @@ diff -u -d -r1.20 Makefile
     
     <para>
       You may extract a single document from such a collection, and
-      dispbibute it individually under this License, provided you
+      distribute it individually under this License, provided you
       insert a copy of this License into the extracted document, and
       follow this License in all other respects regarding verbatim
       copying of that document.
