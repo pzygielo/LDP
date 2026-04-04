@@ -72,7 +72,7 @@ distribute: clean
 
 # To make the rpm file, "make rpm" as root.
 # RPM generates "noarch" files with only a specific architecture,
-# so we forceably rename it.
+# so we forcibly rename it.
 rpm: distribute
 	cp $(VERSIONEDNAME).tgz /usr/src/redhat/SOURCES
 	cp $(NAME).spec /usr/src/redhat/SPECS
