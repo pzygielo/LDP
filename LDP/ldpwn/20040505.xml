@@ -125,7 +125,7 @@ anywhere on the Internet and The current version was not free anymore.
 
 <para><ulink
 url="http://sourceforge.net/projects/asciidoc/">AsciiDoc</ulink> is a
-GPLed formating system written in Python by Stuart Rackham that can
+GPLed formatting system written in Python by Stuart Rackham that can
 convert a plain text human readable/writable document format directly to
 DocBook.  Scot W. Stevenson <ulink
 url="http://lists.tldp.org/index.cgi?1:mss:7121:200404:mjolkcjnjbginkhagjki">suggested</ulink>
