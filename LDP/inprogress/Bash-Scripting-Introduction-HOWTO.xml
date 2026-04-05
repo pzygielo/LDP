@@ -277,7 +277,7 @@ Maintainers: Francis Litterio <franl@world.std.com>,
 
       <para>
 	Where is the Bash shell?  On GNU/Linux systems, you'll always find
-	Bash in <filename>/bin/bash</filename>.  On commerical UNIX systems, such
+	Bash in <filename>/bin/bash</filename>.  On commercial UNIX systems, such
 	as Solaris or HP-UX, you might find it in the same place, or it might be
 	in <filename>/usr/local/bin/bash</filename>.  You rarely need to run Bash
 	directly, but you need to know where Bash is located on your system so
@@ -562,7 +562,7 @@ Hello world
 	If you are using Linux, then Bash is always installed in
 	<filename>/bin/bash</filename>.  The first line in a shell script is
 	sometimes called the <firstterm>shebang</firstterm> line.  This term is
-	derived from the use of the word "bang" to refer to an exclaimation mark
+	derived from the use of the word "bang" to refer to an exclamation mark
 	and the fact that the first line of a shell script names a shell.
       </para>
 
@@ -573,7 +573,7 @@ Hello world
 	in <xref linkend="sect-variables"/>).  In a Bash script, the
 	<command>echo</command> command is the general purpose mechanism for
 	producing output.  It simply outputs its arguments to the terminal on
-	which the script is running.  A single space is output betwen each
+	which the script is running.  A single space is output between each
 	argument, and a newline character is appended.
       </para>
 
@@ -1409,7 +1409,7 @@ echo "$CUSTOMER_NAME"                 # Output is: Mr. Fred Smith
 	    <para>
 	      This variable expands to the pathname of the home directory of the
 	      user who is running the shell.  You can assign to this variable to
-	      change it temporarilly during a single shell session, but the next
+	      change it temporarily during a single shell session, but the next
 	      time you login, it will be set to its original value.  This is an
 	      environment variable.
 	    </para>
@@ -1510,7 +1510,7 @@ echo Hello world &gt; xyz
       <para>
 	In this example, the "<computeroutput>&gt;</computeroutput>" is a
 	metacharacter.  The "<computeroutput>&gt;</computeroutput>" tells Bash
-	to temporarilly redirect standard output of the current command from its
+	to temporarily redirect standard output of the current command from its
 	current destination (the terminal) to the specified file for the
 	duration of the command.  You can specify any relative or absolute
 	pathname after the "<computeroutput>&gt;</computeroutput>".  In this
@@ -1604,7 +1604,7 @@ bash$ echo $?      # Can you explain this output?
 first_command
 STATUS=$?
 second_command
-echo "The first command exitted with status $STATUS."
+echo "The first command exited with status $STATUS."
             </programlisting>
           </example>
         </blockquote>

@@ -31,7 +31,7 @@ communication. Switches and routers are two types of hubs.
 <varlistentry><term>Switch</term><listitem><para>
 Switches connect nodes in a private network to a central point in a star
 topology. They send packets to nodes based on MAC address and provide
-roughtly the same functionality as 'routers' but much more efficiently
+roughly the same functionality as 'routers' but much more efficiently
 and on a different level.
 </para></listitem></varlistentry>
 
@@ -67,7 +67,7 @@ on this device.
 </para></listitem></varlistentry>
 
 <varlistentry><term>Brouter</term><listitem><para>
-A network device that combines bridge and router capablities.
+A network device that combines bridge and router capabilities.
 </para></listitem></varlistentry>
 
 <varlistentry><term>Gateway</term><listitem><para>

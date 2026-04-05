@@ -51,7 +51,7 @@ reflecting back and forth on the bus, which creates extra traffic.
 </para>
 
 <para>
-The bus topology is usually inexpensive for smaller netwroks, since no devices
+The bus topology is usually inexpensive for smaller networks, since no devices
 are required aside from the cable and connectors, and a minimum length of cable
 is required. Ethernet 10Base2 and 10Base5 are common bus networks.
 </para>
@@ -122,7 +122,7 @@ and expand.
 				
 <para>
 A mesh topology provides fault tolerance through redundant links. In this
-system, each node is connected to every other node with seperate cables. Thus,
+system, each node is connected to every other node with separate cables. Thus,
 a three-node network would use three cables; a four node network would use
 eight cables; and a 10-node network would require 45 cables.
 </para>
@@ -163,7 +163,7 @@ but hub is interally connected a ring.
 <para>
 The mesh topology, while too expensive to be practical in itself, is useful in
 hybrid forms. For example, workstations might be connected by a star topology
-while three of four critical servers are wired in a mesh. This adds reliablity
+while three of four critical servers are wired in a mesh. This adds reliability
 to complex networks.
 </para>
 

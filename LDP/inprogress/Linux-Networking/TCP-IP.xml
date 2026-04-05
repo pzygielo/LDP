@@ -110,7 +110,7 @@ of the OSI session layer functionality. This layer provides an application
 layer delivery service. The two protocols found at the transport layer are
 TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). 
 Either of these two protocols can be used by the application layer process,
-the choice depends on the application's transmission reliablity requirements.
+the choice depends on the application's transmission reliability requirements.
 </para>
 
 <para>

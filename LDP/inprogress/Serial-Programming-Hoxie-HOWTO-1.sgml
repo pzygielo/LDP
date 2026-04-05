@@ -101,7 +101,7 @@ You can define these in the <it>termios.c_cc[]</it> array.  Also,
 ERASE and KILL characters will operate on the incoming data before it
 is delivered to the user.
 
-In non-canonical mode, incoming data is quanitified by use of the
+In non-canonical mode, incoming data is quantified by use of the
 <it>c_cc[VMIN</it> and <it>c_cc[VTIME]</it> values in <it>termios.c_cc[]</it>.
 
 Some programmers use the <it>select()</it> call to detect the

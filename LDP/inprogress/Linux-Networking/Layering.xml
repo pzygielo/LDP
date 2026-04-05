@@ -129,7 +129,7 @@ and their respective functions and services.
 <screen>
 entity:
 in software, it is sometimes called a process;
-in hardware in hardware it could mean in pratice an I/O chip
+in hardware in hardware it could mean in practice an I/O chip
 
 peer enties:
 entities at the same layer in different machines/devices
@@ -148,7 +148,7 @@ protocol data unit (PDU):
 a data unit that is communicated between peer entities
 
 service data unit (SDU):
-the PDU from the serice receiver
+the PDU from the service receiver
 
 protocol control information (PCI):
 is appended by a service receiver to an SDU in order to
@@ -214,7 +214,7 @@ disconnect or discontinue a communication
 </para>
 
 <para>
-As discussed before, each layer has specfic functions and offers certain services 
+As discussed before, each layer has specific functions and offers certain services 
 to the layer above it. A service is a set of primitives (operations) that a layer 
 provides to the layer above it. In the definition of services, we do not specify 
 their implementation. The implementation is only visible to the provider of the 

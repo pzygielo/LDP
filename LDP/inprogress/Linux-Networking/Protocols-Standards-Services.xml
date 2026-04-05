@@ -50,7 +50,7 @@ within the data link layer of the OSI model.
 
 NDIS allows software components to be written in a modular fashion, and 
 components that conform to a version of the NDIS specification are 
-guaranteed to communicate with eachother. The current version of NDIS 
+guaranteed to communicate with each other. The current version of NDIS 
 is 4.0.
 
 The process of assigning a protocol to a network card is called binding. 
@@ -58,7 +58,7 @@ NDIS allows multiple protocols to be bound to a single network card,
 and multiple network cards to be bound to a single protocol (or multiple 
 protocols).
 
-ODI (Open Datalink Interface), devloped by Novell and Apple, is an 
+ODI (Open Datalink Interface), developed by Novell and Apple, is an 
 implementation of the same functionality. While designed primarily for 
 the IPX protocol, ODI can be used with any protocol. Netware clients and 
 servers can have network cards bound to multiple protocols. Microsoft's 
@@ -116,7 +116,7 @@ ARCnet, developed in 1977, by Datapoint Corporation, is an older standard
 that has largely been replaced by Ethernet in current networks. ARCnet,
 uses RG-62 coaxial cable in a star, bus, or hybrid physical topology. This
 networking scheme supports active and passive hubs, which must be connected
-to an active hub. ARCnet requries 93-ohm terminators at the end of bus
+to an active hub. ARCnet requires 93-ohm terminators at the end of bus
 cables, and on unused ports of passive hubs. It supports UTP, coaxial, or
 fiber-optic cable. The distance between nodes is 400 feet with UTP cable,
 and higher for coaxial or fiber-optic cable.
@@ -281,7 +281,7 @@ It is now often utilized as a more inexpensive option to Optic Fibre.
 FDDI (Fiber Distributed Data Interface) is a high-speed, reliable, long-distance
 networking scheme often used for network backbones and networks that require
 high bandwidth. FDDI uses fiber optic cable wired in a true ring. It supports
-speeds up to 100 Mbps and a maximum distance bewteen nodes of 100 kilometers
+speeds up to 100 Mbps and a maximum distance between nodes of 100 kilometers
 (62 miles).
 </para>
 
@@ -293,12 +293,12 @@ in the primary ring.
 </para>
 
 <para>
-The advantages of FDDI are their high speed, long distance, and reliablity.
+The advantages of FDDI are their high speed, long distance, and reliability.
 The token-passing scheme used by FDDI is also more sophisticated than that
 of Token Ring: it allows multiple packets to be on the ring at once, and
 allows certain nodes to be given higher priority than the rest. The
 disadvantage of FDDI is its high cost and the difficult in installing and
-maintaing fiber optic cable.
+maintaining fiber optic cable.
 </para>
 
 </sect1>
@@ -429,7 +429,7 @@ transformers, amplifiers and regenerators.
 T1-T4
 <para>
 A T1 line is a high-speed, dedicated, point-to-point leased line that
-includes 24 seperate 64 Kbps channles for voice and data. Other lines
+includes 24 separate 64 Kbps channels for voice and data. Other lines
 of this type, called T-carrier lines, support larger numbers of channels.
 T1 and T3 lines are the most commonly used.
 </para>
@@ -525,7 +525,7 @@ are called multistation access units, or MAUs.
 <para>
 The Token Ring standard supports either 4 Mbps or 16 Mbps speeds. Cable can be
 STP, UTP, or fiber. One popular wiring scheme uses Category 5 cable. There are
-also a varity of cable types defined by IBM (referred to as Type 1 through
+also a variety of cable types defined by IBM (referred to as Type 1 through
 Type 9). Distances between nodes can range from 45 meters for UTP to a kilometer
 or more for fiber optic cable.
 </para>
@@ -539,7 +539,7 @@ Ethernet's contention-based method.
 </para>
 
 <para>
-The nodes in a Token Ring network monitor each other for reliablity. The
+The nodes in a Token Ring network monitor each other for reliability. The
 first computer in the network becomes an Active Monitor, and the others
 are Passive Monitors. Each computer monitors its nearest upstream
 neighbour. When an error occurs, the computer broadcasts a beacon packet
@@ -584,7 +584,7 @@ provides error control and accounting for users of the network.
 The X.25 protocol supports speeds up to 64 Kbps. This makes it impractical for
 many networks, but it is an inexpensive alternative for low-bandwidth
 applications. X,25 is a protocol with a relatively high overhead, since it
-provides error control and accouting for users of the network.
+provides error control and accounting for users of the network.
 </para>
 
 - X25 HOWTO
@@ -828,7 +828,7 @@ itself.
 </para>
 
 <para>
-The Linux kernel has built-in ISDN capabilies. Isdn4linux controls
+The Linux kernel has built-in ISDN capabilities. Isdn4linux controls
 ISDN PC cards and can emulate a modem with the Hayes command set ("AT"
 commands). The possibilities range from simply using a terminal
 program to connections via HDLC (using included devices) to full
@@ -1036,7 +1036,7 @@ SLIP (Serial Line Internet Protocol) and PPP (Point-to-Point Protocol)
 Two protocols commonly used for dial-up access to the Internet. They are typically used with
 TCP/IP; while SLIP works only with TCP/IP, PPP can be used with other protocols.
 
-SLIP was the first protocol for dial-up Internet access. It opeates at the physical layer of the
+SLIP was the first protocol for dial-up Internet access. It operates at the physical layer of the
 OSI model, and provides a simple interface to a UNIX or other dial-up host for Internet access.
 SLIP does not provide security, so authentication is handled through prompts before initiating
 the SLIP connection.
@@ -1087,7 +1087,7 @@ Start the automounter. From now on, whenever you try to access the inexistent mo
   computer without a hard disk.
 
   Coda is a network filesystem (like NFS) that supports disconnected
-  operation, persistant caching, among other goodies.  It's included in
+  operation, persistent caching, among other goodies.  It's included in
   2.2.x kernels. Really handy for slow or unreliable networks and
   laptops.
 
@@ -1122,7 +1122,7 @@ Start the automounter. From now on, whenever you try to access the inexistent mo
   computer without a hard disk.
 
   Coda is a network filesystem (like NFS) that supports disconnected
-  operation, persistant caching, among other goodies.  It's included in
+  operation, persistent caching, among other goodies.  It's included in
   2.2.x kernels. Really handy for slow or unreliable networks and
   laptops.
 
@@ -1277,7 +1277,7 @@ Samba
 </glossterm>
 <glossdef>
 <para>
-Samba adds Windows-networking support to UNIX. Whereas NFS is the most popular protocol for sharing files among UNIX machines, SMB is the most popular protocol for sharing files among Windows machines. The Samba package adds the ability for UNIX systems to interact with Windows systems. Key point: The Samba package comprises the following: smbd The Samba service allowing other machines (often Windows) to read files from a UNIX machine. nmbd Provides support for NetBIOS. Logically, the SMB protocol is layered on top of NetBIOS, which is in turn layered on top of TCP/IP. smbmount An extension to the mount program that allows a UNIX machine to connect to another machine implicitly. Files can be accessed as if they were located on the local machines. smbclient Allows files to be access through SMB in an explicity manner. This is a command-line tool much like the FTP tool that allows files to be copied. Unlike smbmount, files cannot be accessed as if they were local. smb.conf The configuration file for Samba. From Hacking-Lexicon
+Samba adds Windows-networking support to UNIX. Whereas NFS is the most popular protocol for sharing files among UNIX machines, SMB is the most popular protocol for sharing files among Windows machines. The Samba package adds the ability for UNIX systems to interact with Windows systems. Key point: The Samba package comprises the following: smbd The Samba service allowing other machines (often Windows) to read files from a UNIX machine. nmbd Provides support for NetBIOS. Logically, the SMB protocol is layered on top of NetBIOS, which is in turn layered on top of TCP/IP. smbmount An extension to the mount program that allows a UNIX machine to connect to another machine implicitly. Files can be accessed as if they were located on the local machines. smbclient Allows files to be access through SMB in an explicitly manner. This is a command-line tool much like the FTP tool that allows files to be copied. Unlike smbmount, files cannot be accessed as if they were local. smb.conf The configuration file for Samba. From Hacking-Lexicon
 <ulink url="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html">http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</ulink>
 </para>
 </glossdef>
@@ -1546,7 +1546,7 @@ MacOS, and PalmOS. This makes it far more versatile.
 For example, let's assume the machine that you are attempting to connect to is running Linux.
 You can use VNC to access applications running on that other Linux desktop. You can also use
 VNC to provide technical support to users on Window's based machines by taking control of
-their desktops from the comfort of your server room. VNC is usually installed as seperate
+their desktops from the comfort of your server room. VNC is usually installed as separate
 packages for the client and server, typically named 'vnc' and 'vnc-server'.
 
 VNC uses screen numbers to connect clients to servers. This is because Unix machines allow
@@ -1617,7 +1617,7 @@ Language) pages, images, Flash and other objects.
 </para>
 
 <para>
-In mode modern situations, the Web server can also geneate pages
+In mode modern situations, the Web server can also generate pages
 dynamically based on information returned from the user. Either way
 setting up your own Web server is extremely simple. There are many
 choices for Web serving under Linux. Some servers are very mature,
@@ -1659,7 +1659,7 @@ Chill!soft and Halycon Software) and ColdFusion.
 <para>
 PHP is an open source scripting language designed to churn out
 dynamically produced Web content ranging from databases to browsers.
-This inludes not only HTML, but also graphics, Macromedia Flash and
+This includes not only HTML, but also graphics, Macromedia Flash and
 XML-based information. The latest versions of PHP provide impressive
 speed improvements, install easily from packages and can be set up
 quickly. PHP is the most popular Apache module and is used by over
@@ -1784,7 +1784,7 @@ In times gone by, users would Telnet into the SMTP server itself and use a comma
 <title>Proxy-Caching</title>
 
 <para>
-When a web browser retreives information from the Internet, it stores a copy of that information
+When a web browser retrieves information from the Internet, it stores a copy of that information
 in a cache on the local machine. When a user requests that information in future, the browser will check to seee if the original source has updated; if not, the browser will simply use the cached version rather than fetch the data again. By doing this, there is less information that needs to be downloadded, which makes the connection seem responsive to users and reduces bandwidth costs. But if there are many browsers accessing the Internet through the same connection, it makes better sense to have a single, centralised cache so that once a single machine has requested some information, the next machine to try and download that information can also access it more quickly. This is the theory behind the proxy cache. Squid is by far the most popular cache used on the Web, and can also be used to accelerate Web serving. 
 
 Although Squid is useful for an ISP, large businesses or even a small office can afford to use Squid to speed up transfers and save money, and it can easily be used to the same effect in a home with a few flatmates sharing a cable or ADSL connection.
@@ -2086,7 +2086,7 @@ number of free NTP servers in Australia:
 </para>
 
 <para>
-The Univeristy of Melbourne	ntp.cs.mu.oz.au
+The University of Melbourne	ntp.cs.mu.oz.au
 University of Adelaide	ntp.saard.net
 CSIRO Marine Labs, Tasmania	ntp.ml.csiro.au
 CSIRO National Measurements Laboratory, Sydney	ntp.syd.dms.csiro.au
@@ -2444,7 +2444,7 @@ An important point to note when analyzing IP accounting is that totals
 for all rules that match will be incremented so that to obtain
 differential figures you need to perform appropriate maths. For
 example if I wanted to know how much data was not ftp nor www I would
-substract the individual totals from the rule that matches all ports.
+subtract the individual totals from the rule that matches all ports.
 </para>
 
 <para>

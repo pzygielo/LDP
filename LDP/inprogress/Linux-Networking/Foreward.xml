@@ -10,7 +10,7 @@ such as files, devices (such as printers and modems) and services.
 Basically, they consist of two fundamental things, devices and
 connections. However, even this will not be of any real practical
 use since there is no way in which for humans to use the network to receive
-or distribute data. Hence, the basic neccessities for a successful and
+or distribute data. Hence, the basic necessities for a successful and
 useful computer network are a communication link, an interface to the
 link and software to access the link. Note that for the rest of this
 document, the words "link" and "connection" will be loosely synonymous.

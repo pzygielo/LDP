@@ -16,7 +16,7 @@ As has been stated in the Linux Networking HOWTO
 (http://tldp.org/HOWTO/NET3-4-HOWTO.html)
 the actual implementation of the TCP/IP protocol stack was done
 basically from scratch due to concerns with regards to copyright issues
-as well as the possibilty that developers would be able to come up
+as well as the possibility that developers would be able to come up
 with a protocol stack that was superior to existing protocol stacks.
 </para>
 
@@ -76,7 +76,7 @@ his implementation of a huge range of ethernet drivers.
 Alan continued to develop the networking code and through the aid of
 other people added support for a multitude of other protocols such
 as AX.25, IPX, PPP (Michael Callahan and Al Longyear), and AX.25/NetRom/Rose
-protcol set (Jonathan Naylor).
+protocol set (Jonathan Naylor).
 </para>	
 
 <para>
@@ -85,7 +85,7 @@ in some cases surpasses the capabilities and performance of commercial
 implementations of Linux), there still seems to be significant issues with
 regards to driver development. This is most especially the case with regards
 to wireless driver development where while most internal cards are supported
-there a small minority where support is non-existant and companies seem
+there a small minority where support is non-existent and companies seem
 to be unwilling to disclose enough information regarding the card to develop
 something that is workeable.
 </para>	
@@ -925,7 +925,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
         specializes in managing incoming network connections. It has a
         configuration file which tells it what program needs to be run
         when an incoming connection is received. Any service port may be
-        configured for either of the tcp or udp protcols. The ports are
+        configured for either of the tcp or udp protocols. The ports are
         described in another file that we will talk about soon.
 
 
@@ -1289,7 +1289,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
 
 
 
-  # /etc/inetd.conf:  see inetd(8) for further informations.
+  # /etc/inetd.conf:  see inetd(8) for further information.
   #
   # Internet server configuration database
   #
@@ -1418,7 +1418,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
   xns-idp 22      XNS-IDP         # Xerox NS IDP
   rdp     27      RDP             # "reliable datagram" protocol
   iso-tp4 29      ISO-TP4         # ISO Transport Protocol class 4
-  xtp     36      XTP             # Xpress Tranfer Protocol
+  xtp     36      XTP             # Xpress Transfer Protocol
   ddp     37      DDP             # Datagram Delivery Protocol
   idpr-cmtp       39      IDPR-CMTP       # IDPR Control Message Transport
   rspf    73      RSPF            # Radio Shortest Path First.
@@ -1553,7 +1553,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
 
      command
         is an optional parameter. This parameter is the full pathname of
-        a command that would be executed everytime this rule is matched.
+        a command that would be executed every time this rule is matched.
         It could for example run a command that would attempt to
         identify who is logged onto the connecting host, or to generate
         a mail message or some other warning to a system administrator
@@ -1673,7 +1673,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
 
   By default, the Linux kernel only probes for one Ethernet device, you
   need to pass command line arguments to the kernel in order to force
-  detection of furter boards.
+  detection of further boards.
 
   To learn how to make your ethernet card(s) working under Linux you
   should refer to the Ethernet-HOWTO.
@@ -1746,7 +1746,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
   machines are some private local area networks configured with reserved
   IP network addresses. Suppose that you want to allow any host on net­
   work A to connect to any host on network B, just as if they were prop­
-  erly connected to the Internet with a network route. IPIP encapsula­
+  early connected to the Internet with a network route. IPIP encapsula­
   tion will allow you to do this. Note, encapsulation does not solve the
   problem of how you get the hosts on networks A and B to talk to any
   other on the Internet, you still need tricks like IP Masquerade for
@@ -1956,7 +1956,7 @@ Linux Networking HOWTO, http://tldp.org/HOWTO/NET3-4-HOWTO.html
 
   You can get more information on the Linux IP Masquerade feature from
   the IP Masquerade Resource Page. Also, a very detailed document about
-  masquesrading is the ``IP-Masquerade mini-HOWTO'' (which also intructs
+  masquesrading is the ``IP-Masquerade mini-HOWTO'' (which also instructs
   to configure other OS's to run with a Linux masquerade server).
 
   6.10.  IP Transparent Proxy
@@ -2231,11 +2231,11 @@ bandwidth used for session maintenance.
 
 - Connectionless protocols
 
-do not establish a virtual circuit. Data is sent withoug establishing a connection, and may
+do not establish a virtual circuit. Data is sent without establishing a connection, and may
 be sent at any time. These protocols have low overhead, and are generally used where speed
 is a high priority.
 
-Another distinction between protocols is their reliablity. Some protocols send
+Another distinction between protocols is their reliability. Some protocols send
 acknowledgements for each transmitted packet. This makes for a more reliable connection,
 but leaves less bandwidth for actual data transmission. These are called reliable protocols.
 Protocols without acknowledgements are known as unreliable, although this does not
@@ -2246,9 +2246,9 @@ Common Network Protocols and Characteristics
 Protocol	Overhead	Routable?	Typical Application
 TCP/IP	Medium	Yes		Large networks; Internet and UNIX compatibility
 NetBEUI	Low		No		Small Windows-based networks
-IPX/SPX	Medium	Yes		NetWare compatiblity
-Appletalk	Medium	Yes		Apple Macintosh compatiblity
-DLC		Medium	No		IBM mainframe compatiblity; some network printers
+IPX/SPX	Medium	Yes		NetWare compatibility
+Appletalk	Medium	Yes		Apple Macintosh compatibility
+DLC		Medium	No		IBM mainframe compatibility; some network printers
 
 Common WAN Architectures
 
@@ -2260,7 +2260,7 @@ and a connection must be specifically established when needed and disconnected w
 - Message Switching
 
 Message switching is a connectionless method of communication. Individual message units are sent across the network
-with routing information without establishing a dedicated nework.
+with routing information without establishing a dedicated network.
 
 - Packet Switching
 
@@ -2273,7 +2273,7 @@ lnks are usually dedicated between two locations and provide more consistent ava
 
 WAN connections typically require different (and more expensive) hardware than LAN connections. Typical
 WAN equipment includes specialized types of routers, CSU/DSUs (Channel Service Unit/Digital Service Unit),
-and multiplexers, which combine multiple signals (such as voice and data) for tranmissions on a single WAN
+and multiplexers, which combine multiple signals (such as voice and data) for transmissions on a single WAN
 connection. A number of WAN technologies and public networks are available. FDDI, explained earlier in this
 chapter, can also be used for wide-are networks. The common WAN technologies are described in detail in
 the sections below.
@@ -2292,8 +2292,8 @@ the sections below.
 
 >Start Binh
 
-Attentuation is a physical phenomenon which causes a signal to gradually lose 
-power as it propogates through a medium. This is mainly due to due to two 
+Attenuation is a physical phenomenon which causes a signal to gradually lose 
+power as it propagates through a medium. This is mainly due to due to two 
 factors, signal dispersion and signal absorption. Unfortunately, there is some 
 noise which generates a constant noise power, N, and so eventually, as the 
 signal travels a long enough distance, the signal poower will decrease to a 
@@ -2323,17 +2323,17 @@ reduces noise over successive transmissions because small variations in
 the signal can be rounded off to the nearest level. Analogue transmission 
 systems need to filter out the noise, but the filter itself can sometimes 
 be a source of noise and generally, noise can accumulate to an unacceptable 
-level in an analogue tranmission system.
+level in an analogue transmission system.
 
 Consider two types of repeater to understand of digital transmission. In the 
 first instance (analogue) the situation is roughly synonymous with someone 
 who doesn't know Korean and who is trying to relay a message from one Korean 
 to another. It can be done if the person simply repeats the sounds that are 
-heard. In digital tranmission repitition would be more along the lines of 
+heard. In digital transmission repetition would be more along the lines of 
 someone knowing Korean and actually "re-saying" what was heard (perhaps even 
 correcting for errors in what was heard).
 
-Systems which transmit ananlogue signals (such as the calssical radio and 
+Systems which transmit ananlogue signals (such as the classical radio and 
 television broadcasting systems) can use one of three well known techniques,
  Amplitude Modulation (AM), Frequency Modulation (FM), and Phase Modulation (PM).
 AM works by varying the amplitude of a signal to code the bit stream. FM works 
@@ -2342,7 +2342,7 @@ the phase of a signal to code the bit stream.
 
 To allow two transmission medium (usually of the same type) to be directly 
 connected the concept of a switch was developed. A general switch can be 
-built from many basic switches and is somtimes referred to as a switching 
+built from many basic switches and is sometimes referred to as a switching 
 fabric. A lot of research and development contines in an attempt to build 
 better switching fabrics.
 
@@ -2351,7 +2351,7 @@ continuous transmission medium between any two hosts or end devices in the
 network. Circuit switching is perhaps the most straightforward approach to building 
 communication network. Computer networks didn't actually evolve using circuit 
 switching though circuit switching is being considered for certain computer 
-applications such as video and voice. Because circuit switching constucts a 
+applications such as video and voice. Because circuit switching constructs a 
 single long transmission medium with at most analogue repeaters the end devices 
 (in this case telephones) are able to modulate the signal on the medium however 
 they choose. This is also why two modems can communicate with one another over 
@@ -2368,7 +2368,7 @@ The transmission medium can be multiplexed in the time domain, called TDM (Time 
 Multiplexing), using a simple switch and clocked control. Because of delays incurred 
 in the transmission line, the clocks may need to be out of phase with one another. 
 See that with the TDM, the shared medium must be able to transmit at a bit rate 
-that equals (or is better than) the sum of input bit rates. The swithes must also 
+that equals (or is better than) the sum of input bit rates. The switches must also 
 be able to switch fast enough.
 
 The previous example was assuming a synchronous transmission mode. In general, bit 
@@ -2434,7 +2434,7 @@ telecommunication networks.
 
 This doesn't mean the end of telecommunications, but rather a collapse of 
 outdated technological layers towards the "core" networks that they connect 
-to. It will become more apparent to you as we progres through this subject 
+to. It will become more apparent to you as we progress through this subject 
 that networks can be built on top of other networks which are themseleves 
 built on top of ther networks.
 
@@ -2455,7 +2455,7 @@ Server-based networks (also called client-server networks) use a dedicated
 server machine which provides files and printers to network workstations 
 called clients. Client machines are simply used by network users, and usually 
 do not share files or printers. The key benefit of the server-client model is 
-in centralization. There is only a single point of control for network acccess, 
+in centralization. There is only a single point of control for network access, 
 security, and management. The disadvantages of a server-based network are the 
 higher cost of dedicated servers and network operating systems, as well as the 
 increased level of administrative effort required.
@@ -2483,7 +2483,7 @@ its clear that this system is best suited to smaller networks.
 
 <para>
 Internet is not described as a network of any single kind. It can be construed 
-as a large set of heterogenous networks that support a certain set of protocols 
+as a large set of heterogeneous networks that support a certain set of protocols 
 (TCP/IP) and provide certain common services. A good way to learn about the 
 Internet is to use the Internet!
 </para>

@@ -31,7 +31,7 @@ or baseband, signalling uses high and low voltage levels to represent binary
 The physical layer also deals with bit synchronisation. Communications can
 be asynchronous (bits are sent in a single channel, and transitions from
 high to low voltage levels can indicate the division between bits) or
-synchronous (a seperate clock signal is sent to indicate when each bit
+synchronous (a separate clock signal is sent to indicate when each bit
 arrives in the data channel). Fast Ethernet, RS232, and ATM are protocols
 with physical layer components.
 </para></listitem></varlistentry>
@@ -78,7 +78,7 @@ sequence, checking them for errors, and passing them on the session layer.
 Aacknowledgements are sent to indicate that the data has been received, and
 retransmissions are requested for objects that are bit received correctly.
 When transmitting, this layer breaks large messages into packets of the
-appropiate size for the network, and passes them on the network layer.
+appropriate size for the network, and passes them on the network layer.
 </para></listitem></varlistentry>
 
 <varlistentry><term>Layer 5 - Session</term>
@@ -94,7 +94,7 @@ security, are also handled by the session layer.
 
 <varlistentry><term>Layer 6 - Presentation</term>
 <listitem><para>
-The presentation layer is responsible for tranlating data sent by the
+The presentation layer is responsible for translating data sent by the
 application layer into the proper format for network communication, and
 translating data received from the network into a format the application
 can understand. If used, compression and encryption are also handled at
@@ -106,7 +106,7 @@ this level.
 The application layer is the interface network-aware applications use to
 access the network. This layer controls access by applications to the
 network, and is responsible for informing an application when a network
-error has occured. Certain higher-level protocols that can be used by
+error has occurred. Certain higher-level protocols that can be used by
 simple client applications (such as FTP and NFS) also operate at this
 level. A user is most likely to recognise this layer through the programs
 that they use to interface to the network. For example, through a web
