@@ -20,7 +20,7 @@
 
 <listitem><para>The <ulink url="http://www.ibiblio.org/mdw/HOWTO/Mock-Mainframe/index.html">The Mock Mainframe Mini-HOWTO</ulink> by Scot W. Stevenson is a brief description of a standard way to set up and work with a computer network for a small group of people.  The goals are low build costs, ease of administration and relative safety.  The document requires no extraordinary background, specific terminology is explained as the author goes along.</para></listitem>
 
-<listitem><para>Eric S. Raymond did a complete rewrite of the <ulink url="http://tldp.org/HOWTO/UPS-HOWTO/">UPS HOWTO</ulink>.  An Uninterruptable Power Supply is the box that will keep your hardware running when the conventional power network is in trouble.  Worried about power outages?  If you have Linux, a UPS and this HOWTO, you'll feel much better.</para></listitem>
+<listitem><para>Eric S. Raymond did a complete rewrite of the <ulink url="http://tldp.org/HOWTO/UPS-HOWTO/">UPS HOWTO</ulink>.  An Uninterruptible Power Supply is the box that will keep your hardware running when the conventional power network is in trouble.  Worried about power outages?  If you have Linux, a UPS and this HOWTO, you'll feel much better.</para></listitem>
 
 </itemizedlist>
 </sect2>
