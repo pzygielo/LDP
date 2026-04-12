@@ -409,7 +409,7 @@ With the file system, access conditions, a microcomputer, RAM, ROM, EEPROM a sma
    <title>OpenCard</title>
    <indexterm><primary>smart card!Programming!OpenCard</primary></indexterm>
    <para>
-   OpenCard Framework, OCF, is an object-oriented framework for smart card communications. OCF uses Java's inter-operability between environments to deploy architecture and APIs for application developers and service providers.
+   OpenCard Framework, OCF, is an object-oriented framework for smart card communications. OCF uses Java's interoperability between environments to deploy architecture and APIs for application developers and service providers.
    </para>
   </sect2>
   
